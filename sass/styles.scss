@@ -1,0 +1,170 @@
+//===== fuentes =====//
+
+@font-face {
+    font-family: "graphik-bold";
+    src: url(/fonts/Graphik/GraphikBold.otf);
+}
+@font-face {
+    font-family: "graphik-semi-bold";
+    src: url(/fonts/Graphik/GraphikSemibold.otf);
+}
+@font-face {
+    font-family: "graphik-light";
+    src: url(/fonts/Graphik/GraphikLight.otf);
+}
+
+//===================//
+
+
+
+
+//===== PALETA DE COLORES =====//
+
+$header: #14181c;
+$principal: #202830;
+$texto: #AABBCC;
+
+
+//=============================//
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $principal;
+}
+
+//========= HEADER ===========//
+
+.relleno {
+    width: 100%;
+    height: 72px;
+    background: $header;
+}
+.header {
+    width: 59.375rem;
+    height: 72px;
+    margin: 0 auto;
+    background-color: $header;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: graphik-bold;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+
+    .imagen-logo {
+        margin-right: 0.625rem;
+    }
+    h1 {
+        font-size: 1.938rem;
+    }
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.lista-navbar {
+    list-style: none;
+
+    li {
+        display: inline-block;
+        padding-inline: 0.438rem;
+
+        a {
+            font-family: graphik-semi-bold;
+            text-decoration: none;
+            color: #c5c8c9;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            letter-spacing: 0.063rem;
+
+            .bi-search {
+                font-size: 0.938rem;
+            }
+            .bi-lightning-charge-fill {
+                font-size: 1.063rem;
+            }
+        }
+    }
+
+    button {
+        padding: 0.25rem;
+        padding-left: 0.875rem;
+        border: none;
+        border-radius: 0.188rem;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        background: rgba(0,176,32,255);
+        text-transform: uppercase;
+
+        a {
+            color: white;
+        }
+
+        .bi-chevron-down {
+            margin-left: 0.425rem;
+            color: white;
+            width: 100%;
+            height: 100%;
+            font-size: 0.75rem;
+        }
+    }
+}
+
+
+//========= MAIN ===========//
+
+.container {
+    width: 59.375rem;
+    margin: 0 auto;
+    font-family: graphik-light, sans-serif;
+}
+
+
+//=========== MENSAJE ========//
+
+.mensaje {
+    margin: 2.5rem auto;
+    text-align: center;
+    color: $texto;
+
+    * {
+        font-size: 1.625rem;
+        font-weight: 400;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid $texto;
+    }
+}
+
+//=========== ACTIVIDAD ========//
+.new-from-friends {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 0.813rem;
+    letter-spacing: 1.5px;
+    border-bottom: 0.1px solid #aabbcc48;
+    
+    a {
+        text-decoration: none;
+        color: $texto;
+        margin-bottom: 5px;
+    }
+    .a-2 {
+        color: #AABBCC99;
+    }
+}
