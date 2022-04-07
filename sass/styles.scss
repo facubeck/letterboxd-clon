@@ -42,11 +42,11 @@ body {
 
 .relleno {
     width: 100%;
-    height: 72px;
+    min-height: 72px;
     background: $header;
 }
 .header {
-    width: 59.375rem;
+    max-width: 950px;
     height: 72px;
     margin: 0 auto;
     background-color: $header;
@@ -58,10 +58,15 @@ body {
 
 .logo-container {
     display: flex;
-    align-items: center;
-
+    a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
     .imagen-logo {
         margin-right: 0.625rem;
+        width: 3.75rem;
     }
     h1 {
         font-size: 1.938rem;
@@ -75,6 +80,7 @@ body {
 
 .lista-navbar {
     list-style: none;
+    margin-top: -10px;
 
     li {
         display: inline-block;
@@ -95,6 +101,17 @@ body {
                 font-size: 1.063rem;
             }
         }
+    }
+
+    /* Usuario */
+
+    li img {
+        width: 1.5rem;
+        margin-right: 7px;
+        border-radius: 50%;
+        border: 0.5px solid #ffe8d670;
+        position: relative;
+        top: 4px;
     }
 
     button {
@@ -125,7 +142,7 @@ body {
 //========= MAIN ===========//
 
 .container {
-    width: 59.375rem;
+    max-width: 950px;
     margin: 0 auto;
     font-family: graphik-light, sans-serif;
 }
@@ -164,7 +181,88 @@ body {
         color: $texto;
         margin-bottom: 5px;
     }
-    .a-2 {
+    a:nth-child(2){
         color: #AABBCC99;
+    }
+}
+
+
+//=========== NEW FROM FRIENDS ========//
+
+.recent-from-friends {
+    width: 100%;
+    display: flex;
+}
+
+/* UL DE LOS POSTERS */
+.posters-list {
+    margin: 10px auto;
+    list-style: none;
+}
+
+.poster-container {
+    display: inline-block;
+    width: 151px;
+    height: 254px;
+    position: relative;
+
+    .poster {
+        height: 100%;
+        border: 0.1px solid #aabbcc48;
+        background-size: cover;
+        margin: 0 3px;
+        border-radius: 5px 5px 0 0;
+    }    
+    a {
+        text-decoration: none;
+    }
+    
+    .abajo {
+        height: 25px;
+        padding: 2px;
+        width: 145px;
+        margin-left: 3px;
+        background-color: #445566;
+        border-radius: 0 0 5px 5px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        img {
+            height: 90%;
+                border-radius: 50%;
+                margin-left: 6px;
+        }        
+
+        p {
+            text-decoration: none;
+            color: $texto;
+            display: inline-block;
+            padding: 0 6px;
+            font-family: graphik-semi-bold;
+            font-size: 11px;
+        }    
+    }        
+}    
+
+/* ============ POSTERS ========== */
+
+a {
+    .p1 {
+        background: url(/images/posters/the-batman.jpg) no-repeat;
+    }
+    .p2 {
+        background: url(/images/posters/spencer.jpg) no-repeat;
+    }
+    .p3 {
+        background: url(/images/posters/malignant-movie-poster.jpg) no-repeat;
+    }
+    .p4 {
+        background: url(/images/posters/uncut-gems.jpg) no-repeat;
+    }
+    .p5 {
+        background: url(/images/posters/knives-out.jpg) no-repeat;
+    }
+    .p6 {
+        background: url(/images/posters/lalaland.jpg) no-repeat;
     }
 }

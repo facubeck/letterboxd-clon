@@ -8,19 +8,21 @@
 
 body { background: #202830; }
 
-.relleno { width: 100%; height: 72px; background: #14181c; }
+.relleno { width: 100%; min-height: 72px; background: #14181c; }
 
-.header { width: 59.375rem; height: 72px; margin: 0 auto; background-color: #14181c; color: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; font-family: graphik-bold; }
+.header { max-width: 950px; height: 72px; margin: 0 auto; background-color: #14181c; color: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; font-family: graphik-bold; }
 
-.logo-container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.logo-container { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.logo-container .imagen-logo { margin-right: 0.625rem; }
+.logo-container a { text-decoration: none; color: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.logo-container .imagen-logo { margin-right: 0.625rem; width: 3.75rem; }
 
 .logo-container h1 { font-size: 1.938rem; }
 
 .navbar { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.lista-navbar { list-style: none; }
+.lista-navbar { list-style: none; margin-top: -10px; /* Usuario */ }
 
 .lista-navbar li { display: inline-block; padding-inline: 0.438rem; }
 
@@ -30,13 +32,15 @@ body { background: #202830; }
 
 .lista-navbar li a .bi-lightning-charge-fill { font-size: 1.063rem; }
 
+.lista-navbar li img { width: 1.5rem; margin-right: 7px; border-radius: 50%; border: 0.5px solid #ffe8d670; position: relative; top: 4px; }
+
 .lista-navbar button { padding: 0.25rem; padding-left: 0.875rem; border: none; border-radius: 0.188rem; cursor: pointer; -webkit-transition: all 0.3s ease 0s; transition: all 0.3s ease 0s; background: #00b020; text-transform: uppercase; }
 
 .lista-navbar button a { color: white; }
 
 .lista-navbar button .bi-chevron-down { margin-left: 0.425rem; color: white; width: 100%; height: 100%; font-size: 0.75rem; }
 
-.container { width: 59.375rem; margin: 0 auto; font-family: graphik-light, sans-serif; }
+.container { max-width: 950px; margin: 0 auto; font-family: graphik-light, sans-serif; }
 
 .mensaje { margin: 2.5rem auto; text-align: center; color: #AABBCC; }
 
@@ -48,5 +52,35 @@ body { background: #202830; }
 
 .new-from-friends a { text-decoration: none; color: #AABBCC; margin-bottom: 5px; }
 
-.new-from-friends .a-2 { color: #AABBCC99; }
+.new-from-friends a:nth-child(2) { color: #AABBCC99; }
+
+.recent-from-friends { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+/* UL DE LOS POSTERS */
+.posters-list { margin: 10px auto; list-style: none; }
+
+.poster-container { display: inline-block; width: 151px; height: 254px; position: relative; }
+
+.poster-container .poster { height: 100%; border: 0.1px solid #aabbcc48; background-size: cover; margin: 0 3px; border-radius: 5px 5px 0 0; }
+
+.poster-container a { text-decoration: none; }
+
+.poster-container .abajo { height: 25px; padding: 2px; width: 145px; margin-left: 3px; background-color: #445566; border-radius: 0 0 5px 5px; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.poster-container .abajo img { height: 90%; border-radius: 50%; margin-left: 6px; }
+
+.poster-container .abajo p { text-decoration: none; color: #AABBCC; display: inline-block; padding: 0 6px; font-family: graphik-semi-bold; font-size: 11px; }
+
+/* ============ POSTERS ========== */
+a .p1 { background: url(/images/posters/the-batman.jpg) no-repeat; }
+
+a .p2 { background: url(/images/posters/spencer.jpg) no-repeat; }
+
+a .p3 { background: url(/images/posters/malignant-movie-poster.jpg) no-repeat; }
+
+a .p4 { background: url(/images/posters/uncut-gems.jpg) no-repeat; }
+
+a .p5 { background: url(/images/posters/knives-out.jpg) no-repeat; }
+
+a .p6 { background: url(/images/posters/lalaland.jpg) no-repeat; }
 /*# sourceMappingURL=styles.css.map */
