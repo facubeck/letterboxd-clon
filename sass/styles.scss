@@ -12,7 +12,10 @@
     font-family: "graphik-light";
     src: url(/fonts/Graphik/GraphikLight.otf);
 }
-
+@font-face {
+    font-family: linux-libertine;
+    src: url(/fonts/LinLibertine_Re-4.7.5.otf);
+}
 //===================//
 
 
@@ -22,7 +25,9 @@
 
 $header: #14181c;
 $principal: #202830;
+$secundario: #14181C;
 $texto: #AABBCC;
+$hover: #0096c7;
 
 
 //=============================//
@@ -35,8 +40,10 @@ $texto: #AABBCC;
 }
 
 body {
-    background: $principal;
+    background: $secundario;
 }
+
+
 
 //========= HEADER ===========//
 
@@ -141,6 +148,18 @@ body {
 
 //========= MAIN ===========//
 
+
+//========= FONDO DEGRADE ========//
+.degrade {
+    position: absolute;
+    height: 450px;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient($principal, $secundario);
+}
+
+
+
 .container {
     max-width: 950px;
     margin: 0 auto;
@@ -180,9 +199,18 @@ body {
         text-decoration: none;
         color: $texto;
         margin-bottom: 5px;
+
+        &:hover {
+            color: $hover;
+        }
     }
     a:nth-child(2){
         color: #AABBCC99;
+        font-size: .7rem;
+
+        &:hover {
+            color: $hover;
+        }
     }
 }
 
@@ -251,7 +279,7 @@ a {
         background: url(/images/posters/the-batman.jpg) no-repeat;
     }
     .p2 {
-        background: url(/images/posters/spencer.jpg) no-repeat;
+        background: url(/images/posters/the-batman.jpg) no-repeat;
     }
     .p3 {
         background: url(/images/posters/malignant-movie-poster.jpg) no-repeat;
@@ -265,4 +293,146 @@ a {
     .p6 {
         background: url(/images/posters/lalaland.jpg) no-repeat;
     }
+}
+
+//=========== GET PRO PUBLICIDAD ===========//
+
+.get-pro {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+}
+
+
+
+//=========== POPULAR WITH FRIENDS ===========//
+
+.popular-with-friends {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 0.813rem;
+    letter-spacing: 1.5px;
+    border-bottom: 0.1px solid #aabbcc48;
+    
+    a {
+        text-decoration: none;
+        color: $texto;
+        margin-bottom: 5px;
+
+        &:hover {
+            color: $hover;
+        }
+    }
+    a:nth-child(2){
+        color: #AABBCC99;
+        font-size: .7rem;
+
+        &:hover {
+            color: $hover;
+        }
+    }
+}
+
+//====== POPULAR WITH FRIENDS POSTERS ======//
+
+a {
+    .pr1 {
+        background: url(/images/posters/licorice-pizza.jpg) no-repeat top left;
+        background-position: center;
+    }
+    .pr2 {
+        background: url(/images/posters/spencer.jpg) no-repeat;
+    }
+    .pr3 {
+        background: url(/images/posters/the-batman.jpg) no-repeat;
+    }
+    .pr4 {
+        background: url(/images/posters/ford-v-ferrari.jpg) no-repeat;
+        background-position: 70%;
+    }
+    .pr5 {
+        background: url(/images/posters/war-horse.jpg) no-repeat;
+    }
+    .pr6 {
+        background: url(/images/posters/carol.jpg) no-repeat;
+        background-position: center;
+    }
+}
+
+//=========== LASTEST NEWS ===========//
+
+.lastest-news {
+    display: flex;
+    margin-top: 20px;
+    height: 180px;
+
+    .news-text-container {
+        height: 100%;
+        width: 100%;
+        background: $principal;
+        border-radius: 0 5px 5px 0;
+        padding: 30px;
+        
+        a {
+            text-decoration: none;
+        }
+        h5 {
+            margin-top: 10px;
+            font-size: 24px;
+            color: white;
+            font-family: graphik-semi-bold;
+
+            &:hover {
+                color: $hover;
+            }
+        }
+        p {
+            color: $texto;
+            margin-top: 10px;
+            font-size: 1.1rem;
+            font-family: linux-libertine;
+            line-height: 22px;
+            letter-spacing: .2px;
+
+            a{
+                color: #e1e6ec;
+                font-family: graphik-bold;
+                font-size: .8rem;
+                text-decoration: none;
+
+                &:hover {
+                    color: $hover;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.margin {
+    margin-top: 500px;
 }

@@ -4,9 +4,11 @@
 
 @font-face { font-family: "graphik-light"; src: url(/fonts/Graphik/GraphikLight.otf); }
 
+@font-face { font-family: linux-libertine; src: url(/fonts/LinLibertine_Re-4.7.5.otf); }
+
 * { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body { background: #202830; }
+body { background: #14181C; }
 
 .relleno { width: 100%; min-height: 72px; background: #14181c; }
 
@@ -40,6 +42,8 @@ body { background: #202830; }
 
 .lista-navbar button .bi-chevron-down { margin-left: 0.425rem; color: white; width: 100%; height: 100%; font-size: 0.75rem; }
 
+.degrade { position: absolute; height: 450px; width: 100%; z-index: -1; background: -webkit-gradient(linear, left top, left bottom, from(#202830), to(#14181C)); background: linear-gradient(#202830, #14181C); }
+
 .container { max-width: 950px; margin: 0 auto; font-family: graphik-light, sans-serif; }
 
 .mensaje { margin: 2.5rem auto; text-align: center; color: #AABBCC; }
@@ -52,7 +56,11 @@ body { background: #202830; }
 
 .new-from-friends a { text-decoration: none; color: #AABBCC; margin-bottom: 5px; }
 
-.new-from-friends a:nth-child(2) { color: #AABBCC99; }
+.new-from-friends a:hover { color: #0096c7; }
+
+.new-from-friends a:nth-child(2) { color: #AABBCC99; font-size: .7rem; }
+
+.new-from-friends a:nth-child(2):hover { color: #0096c7; }
 
 .recent-from-friends { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -74,7 +82,7 @@ body { background: #202830; }
 /* ============ POSTERS ========== */
 a .p1 { background: url(/images/posters/the-batman.jpg) no-repeat; }
 
-a .p2 { background: url(/images/posters/spencer.jpg) no-repeat; }
+a .p2 { background: url(/images/posters/the-batman.jpg) no-repeat; }
 
 a .p3 { background: url(/images/posters/malignant-movie-poster.jpg) no-repeat; }
 
@@ -83,4 +91,46 @@ a .p4 { background: url(/images/posters/uncut-gems.jpg) no-repeat; }
 a .p5 { background: url(/images/posters/knives-out.jpg) no-repeat; }
 
 a .p6 { background: url(/images/posters/lalaland.jpg) no-repeat; }
+
+.get-pro { margin-top: 30px; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.popular-with-friends { margin-top: 40px; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; text-transform: uppercase; font-size: 0.813rem; letter-spacing: 1.5px; border-bottom: 0.1px solid #aabbcc48; }
+
+.popular-with-friends a { text-decoration: none; color: #AABBCC; margin-bottom: 5px; }
+
+.popular-with-friends a:hover { color: #0096c7; }
+
+.popular-with-friends a:nth-child(2) { color: #AABBCC99; font-size: .7rem; }
+
+.popular-with-friends a:nth-child(2):hover { color: #0096c7; }
+
+a .pr1 { background: url(/images/posters/licorice-pizza.jpg) no-repeat top left; background-position: center; }
+
+a .pr2 { background: url(/images/posters/spencer.jpg) no-repeat; }
+
+a .pr3 { background: url(/images/posters/the-batman.jpg) no-repeat; }
+
+a .pr4 { background: url(/images/posters/ford-v-ferrari.jpg) no-repeat; background-position: 70%; }
+
+a .pr5 { background: url(/images/posters/war-horse.jpg) no-repeat; }
+
+a .pr6 { background: url(/images/posters/carol.jpg) no-repeat; background-position: center; }
+
+.lastest-news { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 20px; height: 180px; }
+
+.lastest-news .news-text-container { height: 100%; width: 100%; background: #202830; border-radius: 0 5px 5px 0; padding: 30px; }
+
+.lastest-news .news-text-container a { text-decoration: none; }
+
+.lastest-news .news-text-container h5 { margin-top: 10px; font-size: 24px; color: white; font-family: graphik-semi-bold; }
+
+.lastest-news .news-text-container h5:hover { color: #0096c7; }
+
+.lastest-news .news-text-container p { color: #AABBCC; margin-top: 10px; font-size: 1.1rem; font-family: linux-libertine; line-height: 22px; letter-spacing: .2px; }
+
+.lastest-news .news-text-container p a { color: #e1e6ec; font-family: graphik-bold; font-size: .8rem; text-decoration: none; }
+
+.lastest-news .news-text-container p a:hover { color: #0096c7; }
+
+.margin { margin-top: 500px; }
 /*# sourceMappingURL=styles.css.map */
