@@ -79,6 +79,12 @@ body { background: #14181C; }
 
 .poster-container .abajo p { text-decoration: none; color: #AABBCC; display: inline-block; padding: 0 6px; font-family: graphik-semi-bold; font-size: 11px; }
 
+.poster-container .estrellas { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 2px; margin-left: 2px; }
+
+.poster-container .estrellas i { font-size: 12px; color: #AABBCC99; margin-left: 1.5px; }
+
+.poster-container .estrellas p { margin-left: auto; font-size: 12px; color: #AABBCC99; font-family: graphik-light; margin-right: 5px; margin-top: 2px; }
+
 /* ============ POSTERS ========== */
 a .p1 { background: url(/images/posters/the-batman.jpg) no-repeat; }
 
