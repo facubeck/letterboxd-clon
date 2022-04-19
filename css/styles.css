@@ -4,7 +4,7 @@
 
 @font-face { font-family: "graphik-light"; src: url(/fonts/Graphik/GraphikLight.otf); }
 
-@font-face { font-family: linux-libertine; src: url(/fonts/LinLibertine_Re-4.7.5.otf); }
+@font-face { font-family: "linux-libertine"; src: url(/fonts/LinLibertine_Re-4.7.5.otf); }
 
 * { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -67,13 +67,13 @@ body { background: #14181C; }
 /* UL DE LOS POSTERS */
 .posters-list { margin: 10px auto; list-style: none; }
 
-.poster-container { display: inline-block; width: 151px; height: 254px; position: relative; }
+.poster-container { display: inline-block; width: 155px; height: 254px; position: relative; }
 
-.poster-container .poster { height: 100%; border: 0.1px solid #aabbcc48; background-size: cover; margin: 0 3px; border-radius: 5px 5px 0 0; }
+.poster-container .poster { height: 100%; border: 0.1px solid #aabbcc48; background-size: cover; margin: 0 3px; border-radius: 7px 7px 0 0; }
 
 .poster-container a { text-decoration: none; }
 
-.poster-container .abajo { height: 25px; padding: 2px; width: 145px; margin-left: 3px; background-color: #445566; border-radius: 0 0 5px 5px; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.poster-container .abajo { height: 25px; padding: 2px; width: 149px; margin-left: 3px; background-color: #445566; border-radius: 0 0 5px 5px; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .poster-container .abajo img { height: 90%; border-radius: 50%; margin-left: 6px; }
 
@@ -100,15 +100,15 @@ a .p6 { background: url(/images/posters/lalaland.jpg) no-repeat; }
 
 .get-pro { margin-top: 30px; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.popular-with-friends { margin-top: 40px; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; text-transform: uppercase; font-size: 0.813rem; letter-spacing: 1.5px; border-bottom: 0.1px solid #aabbcc48; }
+.sobretodo { margin-top: 40px; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; text-transform: uppercase; font-size: 0.813rem; letter-spacing: 1.5px; border-bottom: 0.1px solid #aabbcc48; }
 
-.popular-with-friends a { text-decoration: none; color: #AABBCC; margin-bottom: 5px; }
+.sobretodo a { text-decoration: none; color: #AABBCC; margin-bottom: 5px; }
 
-.popular-with-friends a:hover { color: #0096c7; }
+.sobretodo a:hover { color: #0096c7; }
 
-.popular-with-friends a:nth-child(2) { color: #AABBCC99; font-size: .7rem; }
+.sobretodo a:nth-child(2) { color: #AABBCC99; font-size: .7rem; }
 
-.popular-with-friends a:nth-child(2):hover { color: #0096c7; }
+.sobretodo a:nth-child(2):hover { color: #0096c7; }
 
 a .pr1 { background: url(/images/posters/licorice-pizza.jpg) no-repeat top left; background-position: center; }
 
@@ -137,6 +137,37 @@ a .pr6 { background: url(/images/posters/carol.jpg) no-repeat; background-positi
 .lastest-news .news-text-container p a { color: #e1e6ec; font-family: graphik-bold; font-size: .8rem; text-decoration: none; }
 
 .lastest-news .news-text-container p a:hover { color: #0096c7; }
+
+/* POPULAR REVIEWS WITH FRIENDS */
+.margin-top { margin-top: 90px; }
+
+.popular-reviews { display: -ms-grid; display: grid; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; gap: 15px; }
+
+.popular-reviews .columna { height: 100%; }
+
+.popular-reviews .columna .review-container { margin-top: 30px; }
+
+.popular-reviews .columna .review-container::after { display: block; content: ""; width: 95%; height: 0.1px; margin-top: 20px; background: #aabbcc48; }
+
+.popular-reviews .columna .review-content { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.popular-reviews .columna .review-content img { width: 78px; height: 116px; border: 0.1px solid #aabbcc48; }
+
+.popular-reviews .columna .review-content .user-title-stars { padding: 20px; width: 100%; }
+
+.popular-reviews .columna .review-content .user-title-stars .usuario { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.popular-reviews .columna .review-content .user-title-stars .usuario img { width: 23px; height: 23px; border-radius: 50%; }
+
+.popular-reviews .columna .review-content .user-title-stars .usuario a { text-decoration: none; color: #AABBCC; padding: 0 6px; font-family: graphik-semi-bold; font-size: 12px; }
+
+.popular-reviews .columna .review-content .user-title-stars h5 { padding-top: 8px; font-size: 24px; font-family: graphik-bold; color: #e1e6ec; display: inline-block; }
+
+.popular-reviews .columna .review-content .user-title-stars span { color: #AABBCC99; font-size: 16px; margin-left: 8px; }
+
+.popular-reviews .columna .review-content .user-title-stars .estrellas-review { margin-top: 7px; color: green; font-size: 11px; }
+
+.popular-reviews .columna .review-text { padding-top: 15px; padding-right: 10px; font-family: Georgia, serif; font-size: 15px; color: #99aabb; line-height: 24px; }
 
 .margin { margin-top: 500px; }
 /*# sourceMappingURL=styles.css.map */
