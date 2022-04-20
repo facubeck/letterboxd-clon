@@ -109,6 +109,10 @@ body {
                 font-size: 1.063rem;
             }
         }
+        a:hover {
+            color: white;
+            transition: 100ms;
+        }
     }
 
     /* Usuario */
@@ -185,6 +189,12 @@ body {
         border-bottom: 1px solid $texto;
     }
 }
+.mensaje:hover {
+    a {
+        border-bottom: 1px solid white;
+        transition: 200ms;
+    }
+}
 
 //=========== ACTIVIDAD ========//
 .new-from-friends {
@@ -231,51 +241,49 @@ body {
 
 .poster-container {
     display: inline-block;
-    width: 155px;
-    height: 254px;
-    position: relative;
+    width: 152px;
+    height: 100%;
+    margin-inline: 2.5px;
+    .poster-content{
+        border-radius: 5px 5px 5px 5px;
+        outline: 2px solid #aabbcc48;
 
-    .poster {
-        height: 100%;
-        border: 0.1px solid #aabbcc48;
-        background-size: cover;
-        margin: 0 3px;
-        border-radius: 7px 7px 0 0;
-    }    
-    a {
-        text-decoration: none;
-    }
-    
-    .abajo {
-        height: 25px;
-        padding: 2px;
-        width: 149px;
-        margin-left: 3px;
-        background-color: #445566;
-        border-radius: 0 0 5px 5px;
-        position: relative;
-        display: flex;
-        align-items: center;
-        img {
-            height: 90%;
+        .poster{
+            border-radius: 4px 4px 0 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .poster-footer {
+            height: 28px;
+            width: 100%;
+            margin-top: -5px;
+            background-color: #445566;
+            border-radius: 0 0 4px 4px;
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 20px;
+                width: 20px;
                 border-radius: 50%;
                 margin-left: 6px;
-        }        
+                border: 0.1px solid #aabbcc48;
+            }        
 
-        p {
-            text-decoration: none;
-            color: $texto;
-            display: inline-block;
-            padding: 0 6px;
-            font-family: graphik-semi-bold;
-            font-size: 11px;
-        }    
-    }     
-    
+            p {
+                text-decoration: none;
+                color: $texto;
+                display: inline-block;
+                padding: 0 6px;
+                font-family: graphik-semi-bold;
+                font-size: 11px;
+            }
+        }
+    }
     .estrellas {
         display: flex;
-        margin-top: 2px;
-        margin-left: 2px;
+        margin-top: 7px;
         i {
             font-size: 12px;
             color: $texto-oscuro;
@@ -290,30 +298,13 @@ body {
             margin-top: 2px;
         }
     }
-}    
-
-/* ============ POSTERS ========== */
-
-a {
-    .p1 {
-        background: url(/images/posters/the-batman.jpg) no-repeat;
-    }
-    .p2 {
-        background: url(/images/posters/the-batman.jpg) no-repeat;
-    }
-    .p3 {
-        background: url(/images/posters/malignant-movie-poster.jpg) no-repeat;
-    }
-    .p4 {
-        background: url(/images/posters/uncut-gems.jpg) no-repeat;
-    }
-    .p5 {
-        background: url(/images/posters/knives-out.jpg) no-repeat;
-    }
-    .p6 {
-        background: url(/images/posters/lalaland.jpg) no-repeat;
-    }
 }
+
+.poster-content:hover {
+    outline: 3px solid #2bc016;
+    transition: 300ms;
+}
+
 
 //=========== GET PRO PUBLICIDAD ===========//
 
@@ -356,31 +347,6 @@ a {
     }
 }
 
-//====== POPULAR WITH FRIENDS POSTERS ======//
-
-a {
-    .pr1 {
-        background: url(/images/posters/licorice-pizza.jpg) no-repeat top left;
-        background-position: center;
-    }
-    .pr2 {
-        background: url(/images/posters/spencer.jpg) no-repeat;
-    }
-    .pr3 {
-        background: url(/images/posters/the-batman.jpg) no-repeat;
-    }
-    .pr4 {
-        background: url(/images/posters/ford-v-ferrari.jpg) no-repeat;
-        background-position: 70%;
-    }
-    .pr5 {
-        background: url(/images/posters/war-horse.jpg) no-repeat;
-    }
-    .pr6 {
-        background: url(/images/posters/carol.jpg) no-repeat;
-        background-position: center;
-    }
-}
 
 //=========== LASTEST NEWS ===========//
 
@@ -442,10 +408,10 @@ a {
 .popular-reviews {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
     gap: 15px;
 
     .columna {
-        height: 100%;
 
         .review-container {
             margin-top: 30px;
@@ -525,8 +491,6 @@ a {
         
     }
 }
-
-
 
 
 

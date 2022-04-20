@@ -34,6 +34,8 @@ body { background: #14181C; }
 
 .lista-navbar li a .bi-lightning-charge-fill { font-size: 1.063rem; }
 
+.lista-navbar li a:hover { color: white; -webkit-transition: 100ms; transition: 100ms; }
+
 .lista-navbar li img { width: 1.5rem; margin-right: 7px; border-radius: 50%; border: 0.5px solid #ffe8d670; position: relative; top: 4px; }
 
 .lista-navbar button { padding: 0.25rem; padding-left: 0.875rem; border: none; border-radius: 0.188rem; cursor: pointer; -webkit-transition: all 0.3s ease 0s; transition: all 0.3s ease 0s; background: #00b020; text-transform: uppercase; }
@@ -52,6 +54,8 @@ body { background: #14181C; }
 
 .mensaje a { color: white; text-decoration: none; border-bottom: 1px solid #AABBCC; }
 
+.mensaje:hover a { border-bottom: 1px solid white; -webkit-transition: 200ms; transition: 200ms; }
+
 .new-from-friends { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; text-transform: uppercase; font-size: 0.813rem; letter-spacing: 1.5px; border-bottom: 0.1px solid #aabbcc48; }
 
 .new-from-friends a { text-decoration: none; color: #AABBCC; margin-bottom: 5px; }
@@ -67,36 +71,25 @@ body { background: #14181C; }
 /* UL DE LOS POSTERS */
 .posters-list { margin: 10px auto; list-style: none; }
 
-.poster-container { display: inline-block; width: 155px; height: 254px; position: relative; }
+.poster-container { display: inline-block; width: 152px; height: 100%; margin-inline: 2.5px; }
 
-.poster-container .poster { height: 100%; border: 0.1px solid #aabbcc48; background-size: cover; margin: 0 3px; border-radius: 7px 7px 0 0; }
+.poster-container .poster-content { border-radius: 5px 5px 5px 5px; outline: 2px solid #aabbcc48; }
 
-.poster-container a { text-decoration: none; }
+.poster-container .poster-content .poster { border-radius: 4px 4px 0 0; width: 100%; height: 100%; }
 
-.poster-container .abajo { height: 25px; padding: 2px; width: 149px; margin-left: 3px; background-color: #445566; border-radius: 0 0 5px 5px; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.poster-container .poster-content .poster-footer { height: 28px; width: 100%; margin-top: -5px; background-color: #445566; border-radius: 0 0 4px 4px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.poster-container .abajo img { height: 90%; border-radius: 50%; margin-left: 6px; }
+.poster-container .poster-content .poster-footer img { height: 20px; width: 20px; border-radius: 50%; margin-left: 6px; border: 0.1px solid #aabbcc48; }
 
-.poster-container .abajo p { text-decoration: none; color: #AABBCC; display: inline-block; padding: 0 6px; font-family: graphik-semi-bold; font-size: 11px; }
+.poster-container .poster-content .poster-footer p { text-decoration: none; color: #AABBCC; display: inline-block; padding: 0 6px; font-family: graphik-semi-bold; font-size: 11px; }
 
-.poster-container .estrellas { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 2px; margin-left: 2px; }
+.poster-container .estrellas { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 7px; }
 
 .poster-container .estrellas i { font-size: 12px; color: #AABBCC99; margin-left: 1.5px; }
 
 .poster-container .estrellas p { margin-left: auto; font-size: 12px; color: #AABBCC99; font-family: graphik-light; margin-right: 5px; margin-top: 2px; }
 
-/* ============ POSTERS ========== */
-a .p1 { background: url(/images/posters/the-batman.jpg) no-repeat; }
-
-a .p2 { background: url(/images/posters/the-batman.jpg) no-repeat; }
-
-a .p3 { background: url(/images/posters/malignant-movie-poster.jpg) no-repeat; }
-
-a .p4 { background: url(/images/posters/uncut-gems.jpg) no-repeat; }
-
-a .p5 { background: url(/images/posters/knives-out.jpg) no-repeat; }
-
-a .p6 { background: url(/images/posters/lalaland.jpg) no-repeat; }
+.poster-content:hover { outline: 3px solid #2bc016; -webkit-transition: 300ms; transition: 300ms; }
 
 .get-pro { margin-top: 30px; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -109,18 +102,6 @@ a .p6 { background: url(/images/posters/lalaland.jpg) no-repeat; }
 .sobretodo a:nth-child(2) { color: #AABBCC99; font-size: .7rem; }
 
 .sobretodo a:nth-child(2):hover { color: #0096c7; }
-
-a .pr1 { background: url(/images/posters/licorice-pizza.jpg) no-repeat top left; background-position: center; }
-
-a .pr2 { background: url(/images/posters/spencer.jpg) no-repeat; }
-
-a .pr3 { background: url(/images/posters/the-batman.jpg) no-repeat; }
-
-a .pr4 { background: url(/images/posters/ford-v-ferrari.jpg) no-repeat; background-position: 70%; }
-
-a .pr5 { background: url(/images/posters/war-horse.jpg) no-repeat; }
-
-a .pr6 { background: url(/images/posters/carol.jpg) no-repeat; background-position: center; }
 
 .lastest-news { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 20px; height: 180px; }
 
@@ -141,9 +122,7 @@ a .pr6 { background: url(/images/posters/carol.jpg) no-repeat; background-positi
 /* POPULAR REVIEWS WITH FRIENDS */
 .margin-top { margin-top: 90px; }
 
-.popular-reviews { display: -ms-grid; display: grid; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; gap: 15px; }
-
-.popular-reviews .columna { height: 100%; }
+.popular-reviews { display: -ms-grid; display: grid; -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; grid-auto-flow: row; gap: 15px; }
 
 .popular-reviews .columna .review-container { margin-top: 30px; }
 
