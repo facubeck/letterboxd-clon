@@ -117,6 +117,10 @@ button:hover { background: #00b020cf; }
 
 .get-pro img { width: 100%; }
 
+.get-pro-mobile { cursor: pointer; display: none; margin-top: 30px; }
+
+.get-pro-mobile img { width: 100%; }
+
 .lastest-news { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 20px; height: 180px; }
 
 .lastest-news img { cursor: pointer; }
@@ -301,15 +305,17 @@ footer .logo-none { display: none; }
   .poster-container .poster-content .poster-footer { border-radius: 0 0 2px 2px; height: 24px; }
   .poster-container .poster-content .poster-footer img { width: 1.5rem; height: 1.5rem; margin-left: 2px; }
   .poster-container .poster-content .poster-footer p { padding-top: 2px; font-size: 0.875rem; }
+  .poster-container .poster-content:hover { outline: 1px solid #2bc016; -webkit-transition: 100ms; transition: 100ms; }
+  .poster-container .poster-content:hover .action-poster { display: none; }
   .poster-container .estrellas p { display: none; }
   .last-news { margin-top: 45px; }
-  .lastest-news { display: block; height: 100%; }
+  .lastest-news { display: block; height: 100%; margin-bottom: 50px; }
   .lastest-news img { width: 100%; }
   .lastest-news .news-text-container { padding: 10px; background: #14181C; }
   .pr-margin { margin-top: 20px; }
   .popular-reviews { display: block; }
   .popular-reviews .columna { height: 100%; }
-  .popular-reviews .columna .review-container { margin-top: 15px; }
+  .popular-reviews .columna .review-container { margin-top: 15px; padding-inline: 4px; }
   .popular-reviews .columna .review-container .review-content .user-title-stars { padding: 15px; }
   .popular-reviews .columna .review-container .review-content .user-title-stars .estrellas-review span { position: relative; left: 1px; bottom: 1px; }
   .popular-reviews .columna .review-text p { font-size: 1.1rem; line-height: 20px; }
@@ -320,8 +326,7 @@ footer .logo-none { display: none; }
   .lista ul { width: 100%; height: 100%; }
   .lista ul li img { height: 100%; width: 100%; }
   .lista .titulo-usuario { margin-top: 10px; margin-bottom: 20px; }
-  .lists .container .sobretodo a { font-size: 0.92rem; }
-  .lists .container .sobretodo a:nth-child(2) { font-size: .7rem; }
+  .lista .titulo-usuario .usuario-lista p { font-size: 10px; }
   .popular-lists { position: relative; margin-top: 20px; }
   .margin-30 { margin-top: 50px; }
   .recent-stories { display: block; }
@@ -340,7 +345,9 @@ footer .logo-none { display: none; }
   footer .container p { margin-top: 15px; text-align: center; line-height: 18px; }
   footer .container p .br { display: block; }
   footer .container .logo-none { display: block; width: 100%; padding-bottom: 20px; padding-top: 15px; }
-  footer .container .logo-none .social-logos { width: 100%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; left: 0; } }
+  footer .container .logo-none .social-logos { width: 100%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; left: 0; }
+  .get-pro { display: none; }
+  .get-pro-mobile { display: block; } }
 
 @media (max-width: 850px) { .header ul { display: none; } }
 /*# sourceMappingURL=styles.css.map */

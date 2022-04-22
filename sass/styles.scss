@@ -400,6 +400,14 @@ button:hover {
     }
 }
 
+.get-pro-mobile {
+    cursor: pointer;
+    display: none;
+    margin-top: 30px;
+    img {
+        width: 100%;
+    }
+}
 
 
 //=========== LASTEST NEWS ===========//
@@ -986,6 +994,8 @@ footer {
                 border-radius: 2px 2px 0 0;
             }
 
+            
+
             .poster-footer {
                 border-radius: 0 0 2px 2px;
                 height: 24px;
@@ -1001,6 +1011,13 @@ footer {
                 }
             }
         }
+        .poster-content:hover {
+            outline: 1px solid #2bc016;
+            transition: 100ms;
+        }
+        .poster-content:hover .action-poster {
+            display: none;
+        }
 
         .estrellas p {
             display: none;
@@ -1012,6 +1029,7 @@ footer {
     .lastest-news{
         display: block;
         height: 100%;
+        margin-bottom: 50px;
         img{
             width: 100%;
         }
@@ -1033,6 +1051,7 @@ footer {
 
             .review-container{
                 margin-top: 15px;
+                padding-inline: 4px;
 
                 .review-content{
                     .user-title-stars{
@@ -1087,14 +1106,11 @@ footer {
         .titulo-usuario{
             margin-top: 10px;
             margin-bottom: 20px;
-        }
-    }
-    .lists .container .sobretodo{
-        a{
-            font-size: 0.92rem;
-        }
-        a:nth-child(2){
-            font-size: .7rem;
+            .usuario-lista {
+                p {
+                    font-size: 10px;
+                }
+            }
         }
     }
     
@@ -1188,6 +1204,14 @@ footer {
             }
         }
 
+    }
+
+    .get-pro {
+        display: none;
+    }
+    
+    .get-pro-mobile {
+        display: block;
     }
 }
 
