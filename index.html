@@ -14,18 +14,17 @@
 </head>
 <body>
 
-<!-- __________ HEADER DE LA PAGINA ____________ -->
+<!-- ============== HEADER DE LA PAGINA =============== -->
 
 <div class="relleno">
     <header class="header">
 
         <div class="logo-container">
-                <a href="index.html">
-                    <img src="images/logo-letterboxd.png" alt="Logo Letterboxd" class="imagen-logo">
+                <a href="index.html" class="link">
+                    <img src="images/logo-letterboxd.png" alt="Logo Letterboxd">
                     <h1>Letterboxd</h1>
                 </a>
         </div>
-        <nav class="navbar">
             <ul class="lista-navbar">
                 <li><a href="#"><img src="images/user-image.jpg">FacuBeck <i class="bi bi-chevron-down"></i></a></li>
                 <li><a href="#"><i class="bi-lightning-charge-fill"></i></a></li>
@@ -34,47 +33,56 @@
                 <li><a href="#">Members</a></li>
                 <li><a href="#">Journal</a></li>
                 <li><a href="#"><i class="bi-search"></i></a></li>
-                <li><button><a href="#">+ Log</a><i class="bi bi-chevron-down"></i></button></li>
+                <li><button><p>+ Log</p><i class="bi bi-chevron-down"></i></button></li>
             </ul>
-        </nav>
-
-    </header>
-    </div>
-
-
-
-
-
-<!-- __________ MAIN ____________ -->
-
-    <!-- FONDO DEGRADE -->
-    <div class="degrade"></div>
-
-
-    <!-- __________ NEW FROM FRIENDS ____________ -->
-
-    <div class="container">
-        <div class="mensaje">
-            <h1>Welcome back, <a href="#">Facundo.</a> Here’s what your friends have been watching…</h1>
+        <div class="iconos-resize">
+            <i class="bi bi-plus-lg"></i>
+            <i class="bi bi-list-ul"></i>
+            <i class="bi-search"></i>
         </div>
 
-        <div class="new-from-friends">
+    </header>
+</div>
+
+
+
+
+
+<!-- ============== MAIN ============= -->
+
+    <!-- === FONDO DEGRADE === -->
+    <div class="degrade"></div>
+
+    <!-- === MENSAJE === -->
+    
+    <div class="container">
+        <div class="mensaje">
+            <h1>Welcome back, <a href="#">Facundo.</a> <span>Here’s what your friends have been watching…</span></h1>
+        </div>
+        
+        <div class="sobretodo">
             <a href="#">New From Friends</a>
             <a href="#" class="a-2"><i class="bi-lightning-charge-fill"></i>All activity</a>
         </div>
     </div>
+    
+    
+<!-- ============== NEW FROM FRIENDS =============== -->
 
+    <!-- ============= POSTERS ============== -->
 
-
-    <!-- __________ POSTERS ____________ -->
-
-    <section class="recent-from-friends">
+    <section class="recent-from-friends new-poster">
             <ul class="posters-list">
 
                 <!-- THE BATMAN -->
                 <li class="poster-container">
                     <div class="poster-content">
                         <img src="/images/posters/the-batman.jpg" class="poster">
+                        <div class="action-poster">
+                            <i class="bi bi-eye-fill"></i>
+                            <i class="bi bi-suit-heart-fill"></i>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
                         <div class="poster-footer">
                             <img src="images/iconos-usuarios/citric.png">
                             <p>citric y critico</p>
@@ -90,10 +98,38 @@
                         <p>Apr 15</p>
                     </div>
                 </li>
+                <!-- MALIGNANT -->
+                <li class="poster-container">
+                    <div class="poster-content">
+                        <img src="/images/posters/malignant-movie-poster.jpg" class="poster">
+                        <div class="action-poster">
+                            <i class="bi bi-eye-fill"></i>
+                            <i class="bi bi-suit-heart-fill"></i>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
+                        <div class="poster-footer">
+                            <img src="images/iconos-usuarios/martin.jpg">
+                            <p>Scorsese1942</p>
+                        </div>
+                
+                    </div>
+                    <div class="estrellas">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <p>Apr 15</p>
+                    </div>
+                </li>
                 <!-- THE BATMAN -->
                 <li class="poster-container">
                     <div class="poster-content">
                         <img src="/images/posters/the-batman.jpg" class="poster">
+                        <div class="action-poster">
+                            <i class="bi bi-eye-fill"></i>
+                            <i class="bi bi-suit-heart-fill"></i>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
                         <div class="poster-footer">
                             <img src="images/iconos-usuarios/eltomi.jpg">
                             <p>eltomi</p>
@@ -109,28 +145,15 @@
                         <p>Apr 15</p>
                     </div>
                 </li>
-                <!-- MALIGNANT -->
-                <li class="poster-container">
-                    <div class="poster-content">
-                        <img src="/images/posters/malignant-movie-poster.jpg" class="poster">
-                        <div class="poster-footer">
-                            <img src="images/iconos-usuarios/martin.jpg">
-                            <p>Scorsese1942</p>
-                        </div>
-                
-                    </div>
-                    <div class="estrellas">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <p>Apr 15</p>
-                    </div>
-                </li>
-                <!-- UNCUT GEMS -->
+                <!-- COLLATERAL -->
                 <li class="poster-container">
                     <div class="poster-content">
                         <img src="/images/posters/collateral.jpg" class="poster">
+                        <div class="action-poster">
+                            <i class="bi bi-eye-fill"></i>
+                            <i class="bi bi-suit-heart-fill"></i>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
                         <div class="poster-footer">
                             <img src="images/user-image.jpg" width="15px">
                             <p>facubeck</p>
@@ -146,10 +169,15 @@
                         <p>Apr 15</p>
                     </div>
                 </li>
-                <!-- KNIVES OUT -->
+                <!-- FORD V FERRARI -->
                 <li class="poster-container">
                     <div class="poster-content">
                         <img src="/images/posters/ford-v-ferrari.jpg" class="poster">
+                        <div class="action-poster">
+                            <i class="bi bi-eye-fill"></i>
+                            <i class="bi bi-suit-heart-fill"></i>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
                         <div class="poster-footer">
                             <img src="images/iconos-usuarios/jaypito.jpg" width="15px">
                             <p>jaypito</p>
@@ -159,9 +187,6 @@
                     <div class="estrellas">
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
                         <p>Apr 15</p>
                     </div>
                 </li>
@@ -169,6 +194,11 @@
                 <li class="poster-container">
                     <div class="poster-content">
                         <img src="/images/posters/lalaland.jpg" class="poster">
+                        <div class="action-poster">
+                            <i class="bi bi-eye-fill"></i>
+                            <i class="bi bi-suit-heart-fill"></i>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
                         <div class="poster-footer">
                             <img src="images/iconos-usuarios/chiaruza.jpg" width="15px">
                             <p>chiaruza</p>
@@ -189,75 +219,111 @@
             </ul>
     </section>
 
-<!-- __________ PUBLICIDAD GET PRO ____________ -->
 
+
+<!-- ============== PUBLICIDAD GET PRO =============== -->
 
     <a href="#" class="container get-pro">
         <img src="images/get-pro.png" alt="Get Pro">
     </a>
-    <!-- <div class="container get-pro">
-    </div> -->
+    <div class="container get-pro">
+    </div>
 
 
-<!-- __________ POPULAR WITH FRIENDS SECTION ____________ -->
+
+<!-- ============== POPULAR WITH FRIENDS SECTION =============== -->
 
     <div class="container">
         <div class="sobretodo">
-            <a href="#">Popular With Friends</a>
+            <a href="#">Popular with friends</a>
             <a href="#">More</a>
         </div>
     </div>
 
 
-    <!-- __________ POSTERS ____________ -->
+    <!-- ============= POSTERS ============== -->
 
-    <section class="recent-from-friends">
+    <section class="recent-from-friends  popular-poster">
         <ul class="posters-list">
 
+            <!-- POSTER 1 -->
             <li class="poster-container">
                 <div class="poster-content">
                     <img src="/images/posters/malignant-movie-poster.jpg" class="poster">
+                    <div class="action-poster">
+                        <i class="bi bi-eye-fill"></i>
+                        <i class="bi bi-suit-heart-fill"></i>
+                        <i class="bi bi-three-dots"></i>
+                    </div>
                 </div>
             </li>
+            <!-- POSTER 2 -->
             <li class="poster-container">
                 <div class="poster-content">
                     <img src="/images/posters/the-batman.jpg" class="poster">
+                    <div class="action-poster">
+                        <i class="bi bi-eye-fill"></i>
+                        <i class="bi bi-suit-heart-fill"></i>
+                        <i class="bi bi-three-dots"></i>
+                    </div>
                 </div>
             </li>
+            <!-- POSTER 3 -->
             <li class="poster-container">
                 <div class="poster-content">
                     <img src="/images/posters/lalaland.jpg" class="poster">
+                    <div class="action-poster">
+                        <i class="bi bi-eye-fill"></i>
+                        <i class="bi bi-suit-heart-fill"></i>
+                        <i class="bi bi-three-dots"></i>
+                    </div>
                 </div>
             </li>
+            <!-- POSTER 4 -->
             <li class="poster-container">
                 <div class="poster-content">
                     <img src="/images/posters/spencer.jpg" class="poster">
+                    <div class="action-poster">
+                        <i class="bi bi-eye-fill"></i>
+                        <i class="bi bi-suit-heart-fill"></i>
+                        <i class="bi bi-three-dots"></i>
+                    </div>
                 </div>
             </li>
+            <!-- POSTER 5 -->
             <li class="poster-container">
                 <div class="poster-content">
                     <img src="/images/posters/licorice-pizza.jpg" class="poster">
+                    <div class="action-poster">
+                        <i class="bi bi-eye-fill"></i>
+                        <i class="bi bi-suit-heart-fill"></i>
+                        <i class="bi bi-three-dots"></i>
+                    </div>
                 </div>
             </li>
+            <!-- POSTER 6 -->
             <li class="poster-container">
                 <div class="poster-content">
                     <img src="/images/posters/spiderman.jpg" class="poster">
+                    <div class="action-poster">
+                        <i class="bi bi-eye-fill"></i>
+                        <i class="bi bi-suit-heart-fill"></i>
+                        <i class="bi bi-three-dots"></i>
+                    </div>
                 </div>
             </li>
             
 
         </ul>
-</section>
+    </section>
 
 
 
-<!-- __________ LASTEST NEWS SECTION ____________ -->
+<!-- ============== LAST NEWS SECTION =============== -->
 
-    <div class="container">
-        <div class="sobretodo">
-            <a href="#">Lastest News</a>
-            <a href="#">More</a>
-        </div>
+    <div class="container sobretodo last-news">
+        <a href="#">Lastest News</a>
+        <a href="#">More</a>
     </div>
 
     <div class="container lastest-news">
@@ -273,10 +339,12 @@
 
 
   
-<!-- __________ POPULAR REVIEWS WITH FRIENDS ____________ -->
 
 
-    <div class="container margin-top">
+<!-- ============== POPULAR REVIEWS FROM FRIENDS SECTION =============== -->
+
+
+    <div class="container margin-top pr-margin">
         <div class="sobretodo">
             <a href="#">Popular Reviews With Friends</a>
             <a href="#">More</a>
@@ -285,13 +353,13 @@
 
     <div class="container popular-reviews">
 
-        <!-- PRIMER COLUMNA -->
+    <!-- PRIMER COLUMNA -->
         <div class="columna">
 
-<!-- FORD VS FERRARI REVIEW -->
+                    <!-- FORD VS FERRARI REVIEW -->
             <div class="review-container">
                 <div class="review-content">
-                    <img src="images/posters/ford-v-ferrari.jpg" alt="">
+                    <img src="images/posters/ford-v-ferrari.jpg">
                     <div class="user-title-stars">
                         <div class="usuario">
                             <img src="images/iconos-usuarios/citric.png">
@@ -304,6 +372,8 @@
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-half"></i>
+                            <i class="bi bi-chat-left-fill"></i>
+                            <span>2</span>
                         </div>
                     </div>
                 </div>
@@ -311,9 +381,15 @@
                 <div class="review-text">
                     <p>In a year of films where it feels everyone involved was doing their absolute best, Ford v Ferrari lands on the opposite side of the spectrum. Aside from the editors it was clear that everyone who worked on this, and I mean EVERYONE (besides the editors...and fuck it, Bale too) sleepwalked their way through this. Just when you think something worth writing about is going to happen, they pull back. The bright cinematography was eye-grabbing at first but gets old real fast. It’s getting the job done, nothing more. It’ll be the talk of the town at this year’s Thanksgiving, though.</p>
                 </div>
+
+                <div class="like-review">
+                    <i class="bi bi-heart-fill"></i>
+                    <p>Like review</p>
+                    <span>2 likes</span>
+                </div>
             </div>
 
-<!-- LA LA LAND -->
+                    <!-- LA LA LAND -->
             <div class="review-container">
                 <div class="review-content">
                     <img src="images/posters/lalaland.jpg" alt="">
@@ -329,6 +405,8 @@
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-chat-left-fill"></i>
+                            <span>1</span>
                         </div>
                     </div>
                 </div>
@@ -336,13 +414,18 @@
                 <div class="review-text">
                     <p>Good news for everyone who hates this film: this is the first time I've watched it that made me go "hmmm okay parts of this movie are very very corny." Bad news for those same people: I still think the opening is so beautiful and celebratory and exuberant in a way I want more movies to be, I still think Emma Stone is so fucking fantastic and deserved the Best Actress Oscar, and Damien Chazelle deserved his Best Director Oscar! This movie rules!!!!!!!!</p>
                 </div>
+                <div class="like-review">
+                    <i class="bi bi-heart-fill"></i>
+                    <p>Like review</p>
+                    <span>5 likes</span>
+                </div>
             </div>
         </div>
 
-        <!-- SEGUNDA COLUMNA -->
+    <!-- SEGUNDA COLUMNA -->
         <div class="columna">
 
-<!-- THE BATMAN REVIEW -->
+                    <!-- THE BATMAN REVIEW -->
             <div class="review-container">
                 <div class="review-content">
                     <img src="images/posters/the-batman.jpg" alt="">
@@ -358,6 +441,8 @@
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-chat-left-fill"></i>
+                            <span>2</span>
                         </div>
                     </div>
                 </div>
@@ -365,10 +450,15 @@
                 <div class="review-text">
                     <p>There is a moment where Bruce Wayne puts on sunglasses before eating blueberries in his ornate gothic penthouse and I thought to myself, "This is exactly how it should be."</p>
                 </div>
+                <div class="like-review">
+                    <i class="bi bi-heart-fill"></i>
+                    <p>Like review</p>
+                    <span>24 likes</span>
+                </div>
             </div>
 
-<!-- ROCKY II -->
-            <div class="review-container">
+                    <!-- ROCKY II REVIEW -->
+            <div class="review-container rocky">
                 <div class="review-content">
                     <img src="images/posters/rocky-ii.jpg" alt="">
                     <div class="user-title-stars">
@@ -382,6 +472,8 @@
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-half"></i>
+                            <i class="bi bi-chat-left-fill"></i>
+                            <span>4</span>
                         </div>
                     </div>
                 </div>
@@ -393,6 +485,11 @@
                         
                         Finalmente, Rocky decide volver a subirse al ring. No por él, sino por el prójimo, por su familia. Porque luego de caer Adrian en coma, el pobre hombre reducido a su mínima expresión busca refugio en la fe. Si en la primera película, lo que se daba era un choque de ideologías políticas aquí se da un choque de ideologías y creencias. El egoísmo, edonismo y culto al hombre representado por Apollo Creed contra el hombre humilde que sirve y confía en Dios, sellado en ese último agradecimiento de Rocky en el ring. Rocky entiende que no hay otra forma de darle la vida que merecen a su familia y de volver a recuperar su honor que obtener esa revancha y luchar por lo que merece.</p>
                 </div>
+                <div class="like-review">
+                    <i class="bi bi-heart-fill"></i>
+                    <p>Like review</p>
+                    <span>21 likes</span>
+                </div>
             </div>
         </div>
 
@@ -401,10 +498,10 @@
 
 
 
-<!-- __________ LIST NEW FROM FRIENDS ____________ -->
+<!-- ============== LIST FROM FRIENDS =============== -->
 
 
-<div class="container">
+<div class="container lists">
     <div class="container margin-top">
         <div class="sobretodo">
             <a href="#">New From Friends</a>
@@ -412,10 +509,8 @@
         </div>
     </div>
 
-
     <div class="listas-container">
         
-        <!-- PRIMER LISTA -->
         <div class="lista">
             <ul class="posters-apilados">
                 
@@ -439,8 +534,6 @@
 
         </div>
 
-        <!-- SEGUNDA LISTA -->
-
         <div class="lista">
             <ul class="posters-apilados">
                 
@@ -462,9 +555,7 @@
 
         </div>
 
-        <!-- TERCER LISTA -->
-
-        <div class="lista">
+        <div class="lista margin-bottom">
             <ul class="posters-apilados">
                 
                 <li class="poster1"><img src="images/posters/spider-man-2.jpg" alt=""></li>
@@ -495,22 +586,19 @@
 </div>
 
 
-<!-- __________ LIST POULAR LISTS ____________ -->
+<!-- ============== POPULAR LISTS =============== -->
 
-<div class="container">
+<div class="container margin-30">
     <div class="sobretodo">
         <a href="#">Popular Lists</a>
         <a href="#">More</a>
     </div>
 </div>
 
-<div class="container">
-
-
+<div class="container popular-lists">
     <div class="listas-container">
 
-        <!-- PRIMER LISTA -->
-
+                <!-- PRIMER LISTA -->
         <div class="lista">
             <ul class="posters-apilados">
                 
@@ -533,8 +621,7 @@
             </div>
 
         </div>
-
-        <!-- SEGUNDA LISTA -->
+                <!-- SEGUNDA LISTA -->
         <div class="lista">
             <ul class="posters-apilados">
                 
@@ -558,9 +645,7 @@
 
         </div>
         
-
-        <!-- TERCER LISTA -->
-
+                <!-- TERCER LISTA -->
         <div class="lista">
             <ul class="posters-apilados">
                 
@@ -590,23 +675,20 @@
 </div>
 
 
-<!-- __________ RECENT STORIES ____________ -->
+<!-- ============== RECENT STORIES =============== -->
+<!-- 
 
-
-<div class="container">
-    <div class="sobretodo">
-        <a href="#">Recent Stories</a>
-        <a href="#">All Hqs</a>
-    </div>
-</div>
+<div class="container sobretodo">
+    <a href="#">Recent Stories</a>
+    <a href="#">All Hqs</a>
+</div> -->
     
 
-<div class="container">
-    <div class="recent-stories">
+<!-- <div class="container">
+    <div class="recent-stories"> -->
 
             <!-- COLUMNA 1 -->
-
-        <section>
+        <!-- <section>
             <div class="bloque">
                 <img src="images/recent-stories/imagen-1.jpg" alt="">
                 <div class="usuario">
@@ -645,16 +727,10 @@
                     <a href="#">READ STORY</a>
                 </div>
             </div>
-        </section>
-
-
-
-
-
+        </section> -->
 
             <!-- COLUMNA 2 -->
-
-        <section>
+        <!-- <section>
             <div class="bloque">
                 <img src="images/recent-stories/imagen-2.jpg" alt="">
                 <div class="usuario">
@@ -693,19 +769,10 @@
                     <a href="#">READ STORY</a>
                 </div>
             </div>
-        </section>
-
-
-          
-
-
-
-
-
+        </section> -->
         
             <!-- COLUMNA 3 -->
-
-        <section>
+        <!-- <section>
             <div class="bloque">
                 <img src="images/recent-stories/imagen-3.jpg">
                 <div class="usuario">
@@ -718,7 +785,6 @@
                     <a href="#">READ STORY</a>
                 </div>
             </div>
-
 
             <div class="bloque">
                 <img src="images/recent-stories/imagen-4.jpg">
@@ -745,24 +811,101 @@
                     <a href="#">READ STORY</a>
                 </div>
             </div>
-        </section>
+        </section> -->
+<!-- 
+    </div>
+</div> -->
+    
 
+
+<!-- ============== RECENT SHOWDOWNS AND RECENT NEWS =============== -->
+
+<!-- === RECENT SHOWDOWNS -->
+<!-- <div class="container recent-showdowns-and-news">
+    <div class="sobretodo">
+        <a href="#">Recent Showdowns</a>
+        <a href="#">More</a>
     </div>
 
+    <div class="recent">
+        <div class="showdown-container">
+            <img src="/images/recent-news-images/1.jpg" alt="">
+            <h4>Sea of Trees</h4>
+            <h5>Best Films set in forests or jungles</h5>
+        </div>
+
+        <div class="showdown-container">
+            <img src="/images/recent-news-images/2.jpg" alt="">
+            <h4>Last Action Hero</h4>
+            <h5>Greatest action stars</h5>
+        </div>
+        <div class="showdown-container">
+            <img src="/images/recent-news-images/3.jpg" alt="">
+            <h4>Underworld</h4>
+            <h5>Best under-seen mafia films</h5>
+        </div>
+    </div> -->
 
 
+    <!-- === RECENT NEWS -->
+    <!-- <div class="sobretodo recent-news">
+        <a href="#">Recent News</a>
+        <a href="#">More</a>
+    </div>
+
+    <div class="recent">
+        <div class="showdown-container">
+            <img src="/images/recent-news-images/4.jpg" alt="">
+            <h4>The Shimmering Screen</h4>
+            <h5><span>We’re All Going to the World’s Fair’s</span> director on finding meaning in cyberspace.</h5>
+        </div>
+
+        <div class="showdown-container">
+            <img src="/images/recent-news-images/5.jpg" alt="">
+            <h4>French Kisses</h4>
+            <h5>Jacques Audiard on bringing feminine energy to his latest,<span> Paris, 13th District.</span></h5>
+        </div>
+        <div class="showdown-container">
+            <img src="/images/recent-news-images/6.jpg" alt="">
+            <h4>Step By Step</h4>
+            <h5>Brendan Muldowney and his <span>The Cellar </span> stars on the terrors of parenting.</h5>
+        </div>
+    </div> -->
+
+    
 </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="margin"></div>
 
+
+<!-- ============== FOOTER =============== -->
+
+<!-- <footer>
+    <div class="container">
+        <ul>
+            <li>About</li>
+            <li>News</li>
+            <li>Pro</li>
+            <li>Apps</li>
+            <li>Podcast</li>
+            <li>Year in Review</li>
+            <li>Gift Guide</li>
+            <li>Help</li>
+            <li>Terms</li>
+            <li>API</li>
+            <li>Contact</li>
+            <div class="social-logos">
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-tiktok"></i>
+            </div>
+        </ul>
+        <p>© Letterboxd Limited. Made by <span>fans</span> in Aotearoa. <span>Film data</span> from <span>TMDb.</span> <span>Mobile site.</span></p>
+    </div>
+</footer> -->
+    
+    
+    
 
 
 

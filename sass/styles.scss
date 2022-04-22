@@ -16,6 +16,14 @@
     font-family: "linux-libertine";
     src: url(/fonts/LinLibertine_Re-4.7.5.otf);
 }
+@font-face {
+    font-family: "graphik-thin";
+    src: url(/fonts/Graphik/GraphikThin.otf);
+}
+@font-face {
+    font-family: "graphik-thin-italic";
+    src: url(/fonts/Graphik/GraphikThinItalic.otf);
+}
 //===================//
 
 
@@ -34,6 +42,11 @@ $hover: #0096c7;
 //=============================//
 
 
+
+
+//===== GLOBAL STYLES =====//
+
+
 * {
     margin: 0;
     padding: 0;
@@ -43,19 +56,23 @@ $hover: #0096c7;
 body {
     background: $secundario;
 }
+p {
+    cursor: default;
+}
 
 
-
-//========= HEADER ===========//
+//============================================//
+//=========== HEADER DE LA PAGINA ===========//
+//============================================//
 
 .relleno {
     width: 100%;
-    min-height: 72px;
+    height: 100%;
     background: $header;
 }
 .header {
     max-width: 950px;
-    height: 72px;
+    height: 4.5rem;
     margin: 0 auto;
     background-color: $header;
     color: white;
@@ -72,7 +89,7 @@ body {
         display: flex;
         align-items: center;
     }
-    .imagen-logo {
+    img {
         margin-right: 0.625rem;
         width: 3.75rem;
     }
@@ -81,25 +98,35 @@ body {
     }
 }
 
-.navbar {
+.iconos-resize {
+    color: #aabbcc;
+    font-size: 18px;
     display: flex;
     align-items: center;
+    margin-right: 12px;
+    display: none;
+    i {
+        margin-inline: 5px;
+    }
 }
 
-.lista-navbar {
-    list-style: none;
-    margin-top: -10px;
+//=========== NAVBAR ===========//
 
+
+.lista-navbar {
+    position: relative;
+    top: 18px;
+    left: 5px;
     li {
         display: inline-block;
-        padding-inline: 0.438rem;
+        margin-inline: 7px;
 
         a {
             font-family: graphik-semi-bold;
             text-decoration: none;
-            color: #c5c8c9;
+            color: #aabbcc;
             text-transform: uppercase;
-            font-size: 0.875rem;
+            font-size: 13px;
             letter-spacing: 0.063rem;
 
             .bi-search {
@@ -127,31 +154,37 @@ body {
     }
 
     button {
-        padding: 0.25rem;
-        padding-left: 0.875rem;
-        border: none;
-        border-radius: 0.188rem;
-        cursor: pointer;
-        transition: all 0.3s ease 0s;
-        background: rgba(0,176,32,255);
+        width: 85px;
+        height: 23px;
+        display: flex;
+        background: #00B020;
+        color: white;
+        font-family: graphik-semi-bold;
+        font-size: 0.875rem;
         text-transform: uppercase;
+        border: none;
+        padding: 5px;
+        border-radius: 3px;
+        cursor: pointer;
 
-        a {
-            color: white;
+        p {
+            margin-left: 4px;
+            cursor: pointer;
         }
 
-        .bi-chevron-down {
-            margin-left: 0.425rem;
-            color: white;
-            width: 100%;
-            height: 100%;
-            font-size: 0.75rem;
+        i {
+            margin-left: auto;
         }
     }
 }
+button:hover {
+    background: #00b020cf;
+}
 
 
-//========= MAIN ===========//
+//============================================//
+//==================== MAIN ==================//
+//============================================//
 
 
 //========= FONDO DEGRADE ========//
@@ -166,14 +199,16 @@ body {
 
 
 .container {
-    max-width: 950px;
+    max-width: 59.375rem;
     margin: 0 auto;
     font-family: graphik-light, sans-serif;
 }
 
 
-//=========== MENSAJE ========//
 
+
+
+//=========== MENSAJE ===========//
 .mensaje {
     margin: 2.5rem auto;
     text-align: center;
@@ -196,133 +231,11 @@ body {
     }
 }
 
-//=========== ACTIVIDAD ========//
-.new-from-friends {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    font-size: 0.813rem;
-    letter-spacing: 1.5px;
-    border-bottom: 0.1px solid #aabbcc48;
-    
-    a {
-        text-decoration: none;
-        color: $texto;
-        margin-bottom: 5px;
 
-        &:hover {
-            color: $hover;
-        }
-    }
-    a:nth-child(2){
-        color: #AABBCC99;
-        font-size: .7rem;
-
-        &:hover {
-            color: $hover;
-        }
-    }
-}
-
-
-//=========== NEW FROM FRIENDS ========//
-
-.recent-from-friends {
-    width: 100%;
-    display: flex;
-}
-
-/* UL DE LOS POSTERS */
-.posters-list {
-    margin: 10px auto;
-    list-style: none;
-}
-
-.poster-container {
-    display: inline-block;
-    width: 152px;
-    height: 100%;
-    margin-inline: 2.5px;
-    .poster-content{
-        border-radius: 5px 5px 5px 5px;
-        outline: 2px solid #aabbcc48;
-
-        .poster{
-            border-radius: 4px 4px 0 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .poster-footer {
-            height: 28px;
-            width: 100%;
-            margin-top: -5px;
-            background-color: #445566;
-            border-radius: 0 0 4px 4px;
-            display: flex;
-            align-items: center;
-
-            img {
-                height: 20px;
-                width: 20px;
-                border-radius: 50%;
-                margin-left: 6px;
-                border: 0.1px solid #aabbcc48;
-            }        
-
-            p {
-                text-decoration: none;
-                color: $texto;
-                display: inline-block;
-                padding: 0 6px;
-                font-family: graphik-semi-bold;
-                font-size: 11px;
-            }
-        }
-    }
-    .estrellas {
-        display: flex;
-        margin-top: 7px;
-        i {
-            font-size: 13px;
-            color: $texto-oscuro;
-            margin-left: 1.5px;
-        }
-        p {
-            margin-left: auto;
-            font-size: 12px;
-            color: $texto-oscuro;
-            font-family: graphik-light;
-            margin-right: 5px;
-            margin-top: 2px;
-        }
-    }
-}
-.repeat i:nth-child(5) {
-    margin-left: 5px;
-}
-
-.poster-content:hover {
-    outline: 3px solid #2bc016;
-    transition: 300ms;
-}
-
-
-//=========== GET PRO PUBLICIDAD ===========//
-
-.get-pro {
-    margin-top: 30px;
-    width: 100%;
-    display: flex;
-}
-
-
-
-//=========== POPULAR WITH FRIENDS ===========//
+//=========== SOBRETODO ===========//
 
 .sobretodo {
-    margin-top: 40px;
+    margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -351,12 +264,153 @@ body {
 }
 
 
+
+
+
+//============================================//
+//============= NEW FROM FRIENDS =============//
+//============================================//
+
+.recent-from-friends {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* UL DE LOS POSTERS */
+.posters-list {
+    margin: 10px auto;
+    list-style: none;
+}
+
+
+//=========== POSTERS ===========//
+
+.poster-container {
+    display: inline-block;
+    width: 9.5rem;
+    margin-inline: 2.5px;
+
+    .poster-content{
+        border-radius: 5px 5px 5px 5px;
+        outline: 2px solid #aabbcc48;
+        cursor: pointer;
+        position: relative;
+
+        .poster{
+            border-radius: 4px 4px 0 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .action-poster {
+            position: absolute;
+            padding: 4px;
+            background-color: #000000cc;
+            height: 25px;
+            display: none;
+            i {
+                margin: 0 3px;
+                font-size: 17px;
+                color: #eddacbe2;
+                opacity: 1;
+            }
+        }
+
+        .poster-footer {
+            height: 28px;
+            width: 100%;
+            margin-top: -5px;
+            background-color: #445566;
+            border-radius: 0 0 4px 4px;
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 1.25rem;
+                width: 1.25rem;
+                border-radius: 50%;
+                margin-left: 6px;
+                border: 0.1px solid #aabbcc48;
+            }        
+
+            p {
+                text-decoration: none;
+                color: $texto;
+                display: inline-block;
+                padding: 0 6px;
+                font-family: graphik-semi-bold;
+                font-size: 0.75rem;
+            }
+        }
+    }
+
+    .poster-content:hover .action-poster {
+        display: block;
+        transition: 100ms;
+    }
+
+    .estrellas {
+        display: flex;
+        margin-top: 7px;
+        i {
+            font-size: 0.813rem;
+            color: $texto-oscuro;
+            margin-left: 1.5px;
+        }
+        p {
+            margin-left: auto;
+            font-size: 12px;
+            color: $texto-oscuro;
+            font-family: graphik-light;
+            margin-right: 5px;
+            margin-top: 2px;
+        }
+    }
+}
+.repeat i:nth-child(5) {
+    margin-left: 5px;
+}
+
+.poster-content:hover {
+    outline: 3px solid #2bc016;
+    transition: 300ms;
+}
+
+//=========== ACCIONES EN HOVER DE POSTER ===========//
+
+.new-poster .action-poster {
+    bottom: 35px;
+    left: 30px;
+}
+.popular-poster .action-poster {
+    left: 30px;
+    bottom: 15px;
+}
+
+
+//=========== GET PRO PUBLICIDAD ===========//
+
+.get-pro {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    img {
+        width: 100%;
+    }
+}
+
+
+
 //=========== LASTEST NEWS ===========//
 
 .lastest-news {
     display: flex;
     margin-top: 20px;
     height: 180px;
+    img {
+        cursor: pointer;
+    }
 
     .news-text-container {
         height: 100%;
@@ -370,7 +424,7 @@ body {
         }
         h5 {
             margin-top: 10px;
-            font-size: 24px;
+            font-size: 1.5rem;
             color: white;
             font-family: graphik-semi-bold;
 
@@ -402,7 +456,11 @@ body {
 }
 
 
-/* POPULAR REVIEWS WITH FRIENDS */
+
+
+//============================================//
+//=============  POPULAR REVIEWS =============//
+//============================================//
 
 .popular-reviews {
     display: grid;
@@ -431,7 +489,13 @@ body {
             img {
                 width: 78px;
                 height: 116px;
-                border: 0.1px solid #aabbcc48;
+                outline: 1px solid #aabbcc48;
+                cursor: pointer;
+                border-radius: 3px;
+            }
+            img:hover {
+                outline: 3px solid #2bc016;
+                transition: 200ms;
             }
 
             .user-title-stars{
@@ -447,6 +511,9 @@ body {
                         height: 23px;
                         border-radius: 50%;
                     }
+                    img:hover {
+                        outline: 1px solid #aabbcc48;
+                    }
                     a {
                         text-decoration: none;
                         color: $texto;
@@ -458,21 +525,41 @@ body {
 
                 h5 {
                         padding-top: 8px;
-                        font-size: 24px;
+                        font-size: 1.5rem;
                         font-family: graphik-bold;
                         color: #e1e6ec;
                         display: inline-block;
+                        cursor: pointer;
                 }
+                h5:hover {
+                    color: $hover;
+                }
+
                 span {
                         color: $texto-oscuro;
-                        font-size: 16px;
+                        font-size: 1rem;
                         margin-left: 8px;
+                        cursor: pointer;
                 }
 
                 .estrellas-review {
-                    margin-top: 7px;
+                    margin-top: 10px;
                     color: green;
                     font-size: 11px;
+
+                    .bi-chat-left-fill {
+                        color: $texto-oscuro;
+                        margin-left: 10px;
+                        cursor: pointer;
+                    }
+                    span {
+                        font-size: 0.813rem;
+                        margin-left: 2px;
+                        cursor: pointer;
+                    }
+                    span:hover {
+                        color: #fff;
+                    }
                 }
             }
 
@@ -483,11 +570,45 @@ body {
             padding-top: 15px;
             padding-right: 10px;
             font-family: Georgia, serif;
-            font-size: 15px;
+            font-size: 0.938rem;
             color: rgb(153, 170, 187);
             line-height: 24px;
         }
         
+
+        .like-review {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            i{
+                font-size: 13px;
+                color: $texto-oscuro;
+                cursor: pointer;
+            }
+
+            p {
+                cursor: pointer;
+                margin-left: 7px;
+                font-size: 0.813rem;
+                color: $texto-oscuro;
+                font-family: graphik-semi-bold;
+                
+            }
+            
+            span {
+                cursor: pointer;
+                font-size: 0.875rem;
+                color: $texto-oscuro;
+                font-family: graphik-light;
+                margin-right: 5px;
+                margin-top: 2px;
+                margin-left: 10px;
+            }
+
+            p:hover, span:hover {
+                color: #aabbcc;
+            }
+        }
     }
 }
 
@@ -495,20 +616,21 @@ body {
 
 
 
-
-/* ______ LISTAS NEW FROM FRIENDS _________ */
+//==============================================//
+//============= LISTS FROM FRIENDS =============//
+//==============================================//
 
 
 .listas-container {
     width: 100%;
     height: 200px;
     margin-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
+    display: flex;
 }
 
 .lista {
     width: 100%;
+    flex: 1;
 
     ul{
         height: 105px;
@@ -596,8 +718,9 @@ body {
 }
 
 
-
-/* ______ RECENT STORIES _________ */
+//============================================//
+//=============== RECENT STORIES =============//
+//============================================//
 
 .recent-stories {
     display: grid;
@@ -655,6 +778,7 @@ body {
             font-family: graphik-light;
             margin-top: 12px;
             margin-bottom: 12px;
+            cursor: default;
         }
         a{
             color: rgb(221, 238, 255);
@@ -671,27 +795,121 @@ body {
 
 
 
+//=========== RECENT SHOWDOWNS AND RECENT NEWS ========//
+
+.recent-showdowns-and-news{
+    margin-top: 80px;
+    padding-bottom: 100px;
+}
+
+.recent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 10px;
+
+    .showdown-container {
+        width: 100%;
+        margin-top: 20px;
+            
+        img {
+            width: 100%;
+            outline: 1px solid #aabbcc48;
+            cursor: pointer;
+            }
+
+        h4 {
+            font-size: 18px;
+            color: rgb(255, 255, 255);;
+            font-family: graphik-semi-bold;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        h4:hover {
+            color: $hover;
+        }
+
+        h5 {
+            font-size: 15px;
+            color: rgb(153, 170, 187);
+            font-family: graphik-thin;
+            margin-top: 6px;
+            line-height: 20px;
+            cursor: default;
+
+            span {
+                font-family: graphik-thin-italic;
+            }
+        }
+    }
+}
+
+.recent-news {
+    margin-top: 60px;
+}
 
 
 
+//============================================//
+//=================== FOOTER =================//
+//============================================//
 
+footer {
+    width: 100%;
+    height: 478px;
+    background-color: #2C3440;
 
+    ul {
+        list-style-type: none;
+        padding-top: 38px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        right: 10px;
 
+        li {
+            display: inline-block;
+            color: $texto;
+            font-family: graphik-semi-bold;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        li:hover {
+            color: #c7d7e8;
+        }
+    }
+    .social-logos {
+        width: 20%;
+        display: flex;
+        position: relative;
+        left: 30px;
 
+        i {
+            color: #aabbcc60;
+            margin: 0 8px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        i:hover {
+            color: $texto;
+        }
+    }
 
+    p {
+        color: rgb(102, 119, 136);
+        font-size: 12px;
+        font-family: graphik-light;
+        margin: 8px 0 0 0;
 
-
-
-
-
-
-
-
-
-
-
-
-
+        span {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        span:hover {
+            color: $texto;
+        }
+    }
+}
 
 
 
@@ -700,6 +918,190 @@ body {
     margin-top: 90px;
 }
 
-.margin {
-    margin-top: 500px;
+
+//===== LARGE MEDIA QUERY ====//
+
+@media(max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    body {
+        background: $header;
+    }
+    .relleno {
+        background: $header;
+    }
+    .degrade {
+        display: none;
+    }
+
+    .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .header {
+        height: 3rem;
+        a {
+            margin-left: 15px;
+        }
+
+        ul, h1 {
+            display: none;
+        }
+        .iconos-resize {
+            display: flex;
+        }
+    }
+
+    .mensaje {
+        margin: 1.5rem auto;
+        span {
+            display: none;
+        }
+    }
+
+    .posters-list {
+        margin: 0;
+        text-align: center;
+    }
+
+    .poster-container {
+        width: 30vw;
+        max-width: 130px;
+        margin-top: 10px;
+        margin-inline: 1%;
+        
+        .poster-content {
+            outline: 1px solid #aabbcc48;
+            .poster {
+                border-radius: 2px 2px 0 0;
+            }
+
+            .poster-footer {
+                border-radius: 0 0 2px 2px;
+                height: 24px;
+                img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    margin-left: 2px;
+                }
+
+                p {
+                    padding-top: 2px;
+                    font-size: 0.875rem;
+                }
+            }
+        }
+
+        .estrellas p {
+            display: none;
+        }
+    }
+    .last-news{
+        margin-top: 45px;
+    }
+    .lastest-news{
+        display: block;
+        height: 100%;
+        img{
+            width: 100%;
+        }
+        .news-text-container{
+            padding: 10px;
+            background: $secundario;
+        }
+    }
+
+    .pr-margin{
+        margin-top: 20px;
+    }
+
+    .popular-reviews{
+        display: block;
+
+        .columna {
+            height: 100%;
+
+            .review-container{
+                margin-top: 15px;
+
+                .review-content{
+                    .user-title-stars{
+                        padding: 15px;
+
+                        .estrellas-review {
+                            span{
+                                position: relative;
+                                left: 1px;
+                                bottom: 1px;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+
+            .review-text{
+                p{
+                    font-size: 1.1rem;
+                    line-height: 20px;
+                }
+            }
+
+            .like-review {
+                span {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    .popular-reviews .columna .review-container::after {
+        width: 100%;
+    }
+
+    .listas-container{
+        display: block;
+        height: 100%;
+    }
+
+    .lista {
+        margin-bottom: 20px;
+        ul{
+            width: 100%;
+            height: 100%;
+            li img{
+                height: 155px;
+                width: 100%;
+            }
+        }
+        .titulo-usuario{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    }
+    .lists .container .sobretodo{
+        a{
+            font-size: 0.92rem;
+        }
+        a:nth-child(2){
+            font-size: .7rem;
+        }
+    }
+    
+    .popular-lists{
+        position: relative;
+        margin-top: 20px;
+    }
+}
+
+
+//===== SMALL MEDIA QUERY ====//
+
+@media (max-width: 330px) {
+    html {
+        font-size: 10px;
+    }
 }
