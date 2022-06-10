@@ -1,0 +1,98 @@
+@import "../sass/styles.scss";
+
+// profile container
+.profile-container {
+  display: flex;
+
+  .left-side {
+    display: flex;
+    align-items: center;
+    img {
+      border-radius: 50%;
+      height: 100px;
+      margin: 10px 0 0 5px;
+    }
+
+    section {
+      margin-left: 15px;
+      width: 100%;
+      h1 {
+        font-family: "graphik-semi-bold", sans-serif;
+        color: #ffffff;
+        font-size: 22px;
+        display: inline-block;
+        margin-right: 30px;
+      }
+      button {
+        display: inline-block;
+        background: #556677;
+        color: rgb(200, 212, 224);
+        font-family: "graphik-semi-bold", sans-serif;
+        font-size: 11px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 7px 10px 6px;
+        border-radius: 3px;
+        letter-spacing: 0.825px;
+        box-shadow: inset 0 1px 0 #ffffff33;
+        cursor: pointer;
+        border: none;
+      }
+      h4 {
+        color: #99aabb;
+        font-size: 13px;
+        font-family: "graphik-light";
+        padding: 10px 0 5px 0;
+      }
+      p {
+        display: inline-block;
+        color: #667788;
+        font-family: "graphik-light";
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        margin: 10px 20px 0 -5px;
+
+        i {
+          font-size: 17px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  .right-side {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    div {
+      border-left: solid rgba(153, 170, 187, 0.13) 1px;
+      height: 40px;
+      margin-bottom: 50px;
+
+      h4 {
+        color: rgb(216, 224, 232);
+        font-family: "linux-libertine", sans-serif;
+        font-size: 1.61538462rem;
+        text-align: center;
+      }
+      p{
+        color: rgb(102, 119, 136);
+        font-family: "graphik-light", sans-serif;
+        font-size: .66923077rem;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin: 0 10px;
+        text-align: center;
+        padding-top: 5px;
+      }
+    }
+    div:nth-of-type(1){
+        border-left: none;
+    }
+  }
+}
+.profile-container > div {
+  flex-basis: 50%;
+  height: 150px;
+}
