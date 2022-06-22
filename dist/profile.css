@@ -1115,10 +1115,17 @@ footer .logo-none {
   border-radius: 50%;
   height: 100px;
   margin: 10px 0 0 5px;
+  outline: 0.5px solid #ffe8d628;
+}
+
+.profile-container .left-side img:hover {
+  outline: 0.5px solid #ffe8d675;
+  transition: 300ms;
 }
 
 .profile-container .left-side section {
   margin-left: 15px;
+  margin-top: 5px;
   width: 100%;
 }
 
@@ -1204,5 +1211,60 @@ footer .logo-none {
 .profile-container > div {
   flex-basis: 50%;
   height: 150px;
+}
+
+#profile-navlist ul {
+  outline: 0.5px solid #ffe8d628;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  list-style-type: none;
+  margin: 1em;
+  margin-top: 8px;
+  padding: 10px 10px 13px 40px;
+}
+
+#profile-navlist ul li a {
+  text-decoration: none;
+  font-family: 'graphik-light', arial;
+  color: #99aabb;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 12px;
+  padding-right: 14px;
+  position: relative;
+}
+
+#profile-navlist ul li a i {
+  margin-left: 40px;
+  position: absolute;
+  transform: rotate(45deg);
+  font-size: 16px;
+}
+
+.nav-item-active {
+  color: #ffffff !important;
+}
+
+.nav-item-active:after {
+  content: '';
+  position: absolute;
+  border-bottom: solid 2px #00B020;
+  width: 70%;
+  transform: translateX(-100%);
+  bottom: 0px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.content > * {
+  height: 500px;
+}
+
+main {
+  padding-right: 25px;
 }
 /*# sourceMappingURL=profile.css.map */
