@@ -1196,7 +1196,7 @@ footer .logo-none {
 .profile-container .right-side div p {
   color: #667788;
   font-family: "graphik-light", sans-serif;
-  font-size: .66923077rem;
+  font-size: 0.66923077rem;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   margin: 0 10px;
@@ -1226,7 +1226,7 @@ footer .logo-none {
 
 #profile-navlist ul li a {
   text-decoration: none;
-  font-family: 'graphik-light', arial;
+  font-family: "graphik-light", arial;
   color: #99aabb;
   font-size: 15px;
   line-height: 20px;
@@ -1247,9 +1247,9 @@ footer .logo-none {
 }
 
 .nav-item-active:after {
-  content: '';
+  content: "";
   position: absolute;
-  border-bottom: solid 2px #00B020;
+  border-bottom: solid 2px #00b020;
   width: 70%;
   transform: translateX(-100%);
   bottom: 0px;
@@ -1266,5 +1266,77 @@ footer .logo-none {
 
 main {
   padding-right: 25px;
+}
+
+aside {
+  padding-left: 35px;
+  padding-top: 25px;
+}
+
+.listas-profile {
+  display: inline-block;
+  height: 100%;
+  padding-bottom: 7px;
+}
+
+.diary {
+  display: flex;
+  margin-top: 15px;
+}
+
+.month-icon {
+  height: 25px;
+  width: 34px;
+  background: #445566;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #14181c;
+  padding: 10px;
+  position: relative;
+}
+
+.month-icon .palito {
+  height: 10px;
+  width: 5px;
+  background: #445566;
+  position: absolute;
+  border-radius: 50px;
+  top: -5px;
+  border: solid 2px #14181c;
+}
+
+.month-icon .palito:nth-of-type(1) {
+  left: 5px;
+}
+
+.month-icon .palito:nth-of-type(2) {
+  right: 5px;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+ul li {
+  display: flex;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+ul li span {
+  color: #667788;
+  font-family: "graphik-light", monospace;
+  margin-right: 8px;
+  width: 12px;
+}
+
+ul li p {
+  color: #99aabb;
+  font-family: "graphik-light", monospace;
 }
 /*# sourceMappingURL=profile.css.map */
