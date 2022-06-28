@@ -1,4 +1,31 @@
 @import "../sass/styles.scss";
+//===== fuentes =====//
+
+@font-face {
+    font-family: "graphik-bold";
+    src: url(/fonts/Graphik/GraphikBold.otf);
+}
+@font-face {
+    font-family: "graphik-semi-bold";
+    src: url(/fonts/Graphik/GraphikSemibold.otf);
+}
+@font-face {
+    font-family: "graphik-light";
+    src: url(/fonts/Graphik/GraphikLight.otf);
+}
+@font-face {
+    font-family: "linux-libertine";
+    src: url(/fonts/LinLibertine_Re-4.7.5.otf);
+}
+@font-face {
+    font-family: "graphik-thin";
+    src: url(/fonts/Graphik/GraphikThin.otf);
+}
+@font-face {
+    font-family: "graphik-thin-italic";
+    src: url(/fonts/Graphik/GraphikThinItalic.otf);
+}
+//===================//
 
 // @@ PROFILE HEADER //
 .profile-container {
