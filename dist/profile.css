@@ -1153,6 +1153,10 @@ footer .logo-none {
   border: none;
 }
 
+.profile-container .left-side section button:hover {
+  filter: brightness(1.2);
+}
+
 .profile-container .left-side section h4 {
   color: #99aabb;
   font-size: 13px;
@@ -1167,6 +1171,15 @@ footer .logo-none {
   font-size: 13px;
   letter-spacing: 0.5px;
   margin: 10px 20px 0 -5px;
+}
+
+.profile-container .left-side section p:hover {
+  color: #c3cfdb;
+  transition: 350ms;
+}
+
+.profile-container .left-side section p:nth-of-type(2) {
+  cursor: pointer;
 }
 
 .profile-container .left-side section p i {
@@ -1204,6 +1217,14 @@ footer .logo-none {
   padding-top: 5px;
 }
 
+.profile-container .right-side div h4:hover, .profile-container .right-side div p:hover {
+  cursor: pointer;
+}
+
+.profile-container .right-side div p:hover {
+  color: #0096c7;
+}
+
 .profile-container .right-side div:nth-of-type(1) {
   border-left: none;
 }
@@ -1233,6 +1254,10 @@ footer .logo-none {
   padding: 10px 12px 5px;
   padding-right: 14px;
   position: relative;
+}
+
+#profile-navlist ul li a:hover {
+  color: #fff;
 }
 
 #profile-navlist ul li a i {
@@ -1271,6 +1296,10 @@ main {
 aside {
   padding-left: 35px;
   padding-top: 25px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .listas-profile {
@@ -1342,6 +1371,11 @@ ul li p {
   color: #99aabb;
   font-family: "graphik-light", monospace;
   line-height: 17px;
+  cursor: pointer;
+}
+
+ul li p:hover {
+  color: #0096c7;
 }
 
 .bottom-line {
@@ -1378,6 +1412,10 @@ ul li p {
   background: #445566;
   border-radius: 1px;
   cursor: pointer;
+}
+
+.ratings .fila:hover {
+  background: #667788;
 }
 
 .ratings .fila:nth-of-type(1) {
