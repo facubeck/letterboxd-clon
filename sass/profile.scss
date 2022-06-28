@@ -107,14 +107,14 @@
 // @@ NAVLIST //
 #profile-navlist {
   ul {
-    outline: 0.5px solid #ffe8d628;
+    border: 0.5px solid #ffe8d628;
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
     list-style-type: none;
     margin: 1em;
     margin-top: 8px;
-    padding: 10px 10px 13px 40px;
+    padding: 0 10px 0 40px;
 
     li a {
       text-decoration: none;
@@ -122,7 +122,7 @@
       color: #99aabb;
       font-size: 15px;
       line-height: 20px;
-      padding: 12px;
+      padding: 10px 12px 5px;
       padding-right: 14px;
       position: relative;
 
@@ -172,6 +172,8 @@ aside {
   display: inline-block;
   height: 100%;
   padding-bottom: 7px;
+  margin-left: -20px;
+  cursor: pointer;
 }
 
 // diary
@@ -191,6 +193,7 @@ aside {
   justify-content: center;
   color: rgb(20, 24, 28);
   padding: 10px;
+  padding-top: 13px;
   position: relative;
   .palito {
     height: 10px;
@@ -226,6 +229,94 @@ ul {
     p{
       color: rgb(153, 170, 187);
       font-family: "graphik-light", monospace;
+      line-height: 17px;
     }
+  }
+}
+
+.bottom-line{
+  border-bottom: 0.1px solid #aabbcc27;
+  padding-bottom: 5px;
+}
+
+// ratings section in aside
+.ratings{
+  margin-top: 20px;
+  ul{
+    margin-left: 0px;
+    height: 44px;
+    width: 100%;
+    display: flex;
+    gap: 1.2px;
+    align-items: flex-end;
+  }
+  .star{
+    color: #00b020;
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .first-star{
+    margin-right: 3px;
+  }
+  .fila{
+    height: 100%;
+    width: 100%;
+    background: #445566;
+    border-radius: 1px;
+    cursor: pointer;
+
+    &:nth-of-type(1){
+      height: 5%;
+    }
+    &:nth-of-type(2){
+      height: 8%;
+    }
+    &:nth-of-type(3){
+      height: 15%;
+    }
+    &:nth-of-type(4){
+      height: 25%;
+    }
+    &:nth-of-type(5){
+      height: 40%;
+    }
+    &:nth-of-type(6){
+      height: 55%;
+    }
+    &:nth-of-type(7){
+      height: 50%;
+    }
+    &:nth-of-type(8){
+      height: 75%;
+    }
+    &:nth-of-type(9){
+      height: 40%;
+    }
+    &:nth-of-type(10){
+      height: 32%;
+    }
+  }
+  .stars{
+    display: flex;
+    margin-left: 3px;
+  }
+}
+
+// watchlist
+.titulo-lista-profile{
+  display: flex;
+  align-items: center;
+  margin: 10px 0 -10px 20px;
+  h2{
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: "graphik-semi-bold", sans-serif;
+  }
+  h3{
+    color: #667788;
+    font-size: 12px;
+    font-family: "graphik-light", sans-serif;
+    margin-left: 12px;
   }
 }
