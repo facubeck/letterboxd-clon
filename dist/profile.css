@@ -1217,7 +1217,8 @@ footer .logo-none {
   padding-top: 5px;
 }
 
-.profile-container .right-side div h4:hover, .profile-container .right-side div p:hover {
+.profile-container .right-side div h4:hover,
+.profile-container .right-side div p:hover {
   cursor: pointer;
 }
 
@@ -1295,6 +1296,162 @@ main {
   padding-right: 25px;
 }
 
+.recent-reviews-container {
+  margin-top: 15px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.recent-reviews-container .poster img {
+  width: 70px;
+  height: 108px;
+  outline: 1px solid #aabbcc48;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.recent-reviews-container .poster img:hover {
+  outline: 3px solid #2bc016;
+  transition: 200ms;
+}
+
+.recent-reviews-container .texto {
+  margin-left: 1rem;
+}
+
+.recent-reviews-container .texto h5 {
+  font-size: 1.4rem;
+  font-family: graphik-bold;
+  color: #e1e6ec;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.recent-reviews-container .texto h5:hover, .recent-reviews-container .texto span:hover {
+  color: #0096c7;
+}
+
+.recent-reviews-container .texto span {
+  color: #AABBCC99;
+  font-size: 1rem;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.recent-reviews-container .texto .review-info {
+  margin-top: 10px;
+  color: green;
+  font-size: 11px;
+}
+
+.recent-reviews-container .texto .review-info p {
+  display: inline-block;
+  margin-left: 5px;
+  color: #667788;
+  font-size: 13px;
+  font-family: "graphik-light", sans-serif;
+}
+
+.recent-reviews-container .texto .review-info p span {
+  color: #abc;
+  margin-right: 5px;
+}
+
+.recent-reviews-container .texto .review-info .bi-chat-left-fill {
+  color: #AABBCC99;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.recent-reviews-container .texto .review-info span {
+  font-size: 0.813rem;
+  margin-left: 2px;
+  cursor: pointer;
+}
+
+.recent-reviews-container .texto .review-info span:hover {
+  color: #fff;
+}
+
+.recent-reviews-container .texto .review-text {
+  font-family: "linux-libertine", arial;
+  font-size: 16px;
+  color: #99aabb;
+  margin: 20px 0;
+  line-height: 24px;
+}
+
+.recent-reviews-container .texto .review-text br {
+  content: '';
+  display: block;
+  margin: 15px 0;
+}
+
+.recent-reviews-container .texto .like-review {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+.recent-reviews-container .texto .like-review i {
+  font-size: 13px;
+  color: #AABBCC99;
+  cursor: pointer;
+}
+
+.recent-reviews-container .texto .like-review p {
+  cursor: pointer;
+  margin-left: 7px;
+  font-size: 0.813rem;
+  color: #AABBCC99;
+  font-family: graphik-semi-bold;
+}
+
+.recent-reviews-container .texto .like-review span {
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: #AABBCC99;
+  font-family: graphik-light;
+  margin-right: 5px;
+  margin-top: 2px;
+  margin-left: 10px;
+}
+
+.recent-reviews-container .texto .like-review p:hover,
+.recent-reviews-container .texto .like-review span:hover {
+  color: #aabbcc;
+}
+
+.underline-review {
+  width: 100%;
+  height: 0.1px;
+  background: #aabbcc48;
+  margin: 15px 0;
+}
+
+.following {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px 0 30px;
+  gap: 6px;
+}
+
+.following img {
+  height: 40px;
+  aspect-ratio: 1;
+  border-radius: 20px;
+  cursor: pointer;
+  object-fit: cover;
+  object-position: top;
+}
+
+.following img:hover {
+  outline: 0.5px solid #ffe8d675;
+  transition: 300ms;
+}
+
 aside {
   padding-left: 35px;
   padding-top: 25px;
@@ -1345,7 +1502,7 @@ aside {
   color: #0096c7;
 }
 
-.month-icon {
+.diary .month-icon {
   height: 25px;
   width: 34px;
   background: #445566;
@@ -1361,7 +1518,7 @@ aside {
   position: relative;
 }
 
-.month-icon .palito {
+.diary .month-icon .palito {
   height: 10px;
   width: 5px;
   background: #445566;
@@ -1371,11 +1528,11 @@ aside {
   border: solid 2px #14181c;
 }
 
-.month-icon .palito:nth-of-type(1) {
+.diary .month-icon .palito:nth-of-type(1) {
   left: 5px;
 }
 
-.month-icon .palito:nth-of-type(2) {
+.diary .month-icon .palito:nth-of-type(2) {
   right: 5px;
 }
 
@@ -1504,9 +1661,9 @@ aside {
 }
 
 .activity-ul li:before {
-  content: '';
+  content: "";
   position: absolute;
-  background: #3F5061;
+  background: #3f5061;
   height: 160%;
   width: 1px;
   bottom: -15px;
@@ -1538,5 +1695,10 @@ aside {
 
 .activity-ul li a:hover {
   color: #ffffff8c;
+}
+
+.footer {
+  height: 400px;
+  background: black;
 }
 /*# sourceMappingURL=profile.css.map */

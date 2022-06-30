@@ -1,5 +1,4 @@
 @import "styles.scss";
-//===== fuentes =====//
 
 // @@ PROFILE HEADER //
 .profile-container {
@@ -46,7 +45,7 @@
         cursor: pointer;
         border: none;
 
-        &:hover{
+        &:hover {
           filter: brightness(1.2);
         }
       }
@@ -64,11 +63,11 @@
         letter-spacing: 0.5px;
         margin: 10px 20px 0 -5px;
 
-        &:hover{
+        &:hover {
           color: #c3cfdb;
           transition: 350ms;
         }
-        &:nth-of-type(2){
+        &:nth-of-type(2) {
           cursor: pointer;
         }
 
@@ -106,10 +105,11 @@
         text-align: center;
         padding-top: 5px;
       }
-      h4:hover, p:hover{
+      h4:hover,
+      p:hover {
         cursor: pointer;
       }
-      p:hover{
+      p:hover {
         color: $hover;
       }
     }
@@ -145,7 +145,7 @@
       line-height: 20px;
       position: relative;
       height: 100%;
-      &:hover{
+      &:hover {
         color: #fff;
       }
 
@@ -186,6 +186,162 @@ main {
   padding-right: 25px;
 }
 
+// recent reviews
+.recent-reviews-container {
+  margin-top: 15px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+
+  .poster {
+    img {
+      width: 70px;
+      height: 108px;
+      outline: 1px solid #aabbcc48;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    img:hover {
+      outline: 3px solid #2bc016;
+      transition: 200ms;
+    }
+  }
+
+  .texto {
+    margin-left: 1rem;
+    h5 {
+      font-size: 1.4rem;
+      font-family: graphik-bold;
+      color: #e1e6ec;
+      display: inline-block;
+      cursor: pointer;
+    }
+    h5:hover, span:hover {
+      color: $hover;
+    }
+
+    span {
+      color: $texto-oscuro;
+      font-size: 1rem;
+      margin-left: 8px;
+      cursor: pointer;
+    }
+
+    .review-info {
+      margin-top: 10px;
+      color: green;
+      font-size: 11px;
+
+      p {
+        display: inline-block;
+        margin-left: 5px;
+        color: #667788;
+        font-size: 13px;
+        font-family: "graphik-light", sans-serif;
+        span {
+          color: #abc;
+          margin-right: 5px;
+        }
+      }
+
+      .bi-chat-left-fill {
+        color: $texto-oscuro;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+      span {
+        font-size: 0.813rem;
+        margin-left: 2px;
+        cursor: pointer;
+      }
+      span:hover {
+        color: #fff;
+      }
+    }
+
+    .review-text {
+      font-family: "linux-libertine", arial;
+      font-size: 16px;
+      color: #99aabb;
+      margin: 20px 0;
+      line-height: 24px;
+
+      br{
+        content: '';
+        display: block;
+        margin: 15px 0;
+      }
+    }
+
+    .like-review {
+      display: flex;
+      align-items: center;
+      margin-top: 0;
+      i {
+        font-size: 13px;
+        color: $texto-oscuro;
+        cursor: pointer;
+      }
+
+      p {
+        cursor: pointer;
+        margin-left: 7px;
+        font-size: 0.813rem;
+        color: $texto-oscuro;
+        font-family: graphik-semi-bold;
+      }
+
+      span {
+        cursor: pointer;
+        font-size: 0.875rem;
+        color: $texto-oscuro;
+        font-family: graphik-light;
+        margin-right: 5px;
+        margin-top: 2px;
+        margin-left: 10px;
+      }
+
+      p:hover,
+      span:hover {
+        color: #aabbcc;
+      }
+    }
+  }
+}
+
+.underline-review{
+    width: 100%;
+    height: 0.1px;
+    background: #aabbcc48;
+    margin: 15px 0;
+}
+
+.following{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px 0 30px;
+  gap: 6px;
+
+  img{
+    height: 40px;
+    aspect-ratio: 1;
+    border-radius: 20px;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: top;
+
+    &:hover {
+      outline: 0.5px solid #ffe8d675;
+      transition: 300ms;
+    }
+  }
+}
+
+
+
+
+
 
 
 
@@ -195,7 +351,7 @@ aside {
   padding-top: 25px;
 }
 
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
 }
 
@@ -213,70 +369,71 @@ aside {
   ul {
     list-style-type: none;
     margin-left: 20px;
-  
+
     li {
       display: flex;
       font-size: 13px;
       margin-bottom: 8px;
-  
+
       span {
         color: rgb(102, 119, 136);
         font-family: "graphik-light", monospace;
         margin-right: 8px;
         width: 12px;
       }
-      p{
+      p {
         color: rgb(153, 170, 187);
         font-family: "graphik-light", monospace;
         line-height: 17px;
         cursor: pointer;
-        &:hover{
+        &:hover {
           color: $hover;
         }
       }
     }
   }
-}
-.month-icon {
-  height: 25px;
-  width: 34px;
-  background: #445566;
-  font-size: 12px;
-  text-transform: uppercase;
-  border-radius: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(20, 24, 28);
-  padding: 10px;
-  padding-top: 13px;
-  position: relative;
-  .palito {
-    height: 10px;
-    width: 5px;
+  .month-icon {
+    height: 25px;
+    width: 34px;
     background: #445566;
-    position: absolute;
-    border-radius: 50px;
-    top: -5px;
-    border: solid 2px #14181c;
-    &:nth-of-type(1) {
-      left: 5px;
-    }
-    &:nth-of-type(2) {
-      right: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(20, 24, 28);
+    padding: 10px;
+    padding-top: 13px;
+    position: relative;
+    .palito {
+      height: 10px;
+      width: 5px;
+      background: #445566;
+      position: absolute;
+      border-radius: 50px;
+      top: -5px;
+      border: solid 2px #14181c;
+      &:nth-of-type(1) {
+        left: 5px;
+      }
+      &:nth-of-type(2) {
+        right: 5px;
+      }
     }
   }
 }
 
-.bottom-line{
+
+.bottom-line {
   border-bottom: 0.1px solid #aabbcc27;
   padding-bottom: 5px;
 }
 
 // ratings section in aside
-.ratings{
+.ratings {
   margin-top: 20px;
-  ul{
+  ul {
     margin-left: 0px;
     height: 44px;
     width: 100%;
@@ -285,73 +442,73 @@ aside {
     align-items: flex-end;
     list-style-type: none;
   }
-  .star{
+  .star {
     color: #00b020;
     font-size: 10px;
   }
-  .first-star{
+  .first-star {
     margin-right: 3px;
   }
-  .fila{
+  .fila {
     height: 100%;
     width: 100%;
     background: #445566;
     border-radius: 1px;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
       background: #667788;
-    };
+    }
 
-    &:nth-of-type(1){
+    &:nth-of-type(1) {
       height: 5%;
     }
-    &:nth-of-type(2){
+    &:nth-of-type(2) {
       height: 8%;
     }
-    &:nth-of-type(3){
+    &:nth-of-type(3) {
       height: 15%;
     }
-    &:nth-of-type(4){
+    &:nth-of-type(4) {
       height: 25%;
     }
-    &:nth-of-type(5){
+    &:nth-of-type(5) {
       height: 40%;
     }
-    &:nth-of-type(6){
+    &:nth-of-type(6) {
       height: 55%;
     }
-    &:nth-of-type(7){
+    &:nth-of-type(7) {
       height: 50%;
     }
-    &:nth-of-type(8){
+    &:nth-of-type(8) {
       height: 75%;
     }
-    &:nth-of-type(9){
+    &:nth-of-type(9) {
       height: 40%;
     }
-    &:nth-of-type(10){
+    &:nth-of-type(10) {
       height: 32%;
     }
   }
-  .stars{
+  .stars {
     display: flex;
     margin-left: 3px;
   }
 }
 
 // watchlist
-.titulo-lista-profile{
+.titulo-lista-profile {
   display: flex;
   align-items: center;
   margin: 10px 0 -10px 0;
-  h2{
+  h2 {
     color: #ffffff;
     font-size: 15px;
     line-height: 18px;
     font-family: "graphik-semi-bold", sans-serif;
   }
-  h3{
+  h3 {
     color: #667788;
     font-size: 12px;
     font-family: "graphik-light", sans-serif;
@@ -360,35 +517,35 @@ aside {
 }
 
 // activity in aside
-#activity{
+#activity {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.activity-ul{
+.activity-ul {
   list-style-type: none;
   font-family: "graphik-light", sans-serif;
   color: #667788;
-  li{
+  li {
     width: 100%;
     height: 100%;
     margin-bottom: 15px;
     display: flex;
     position: relative;
 
-    &:before{
-      content: '';
+    &:before {
+      content: "";
       position: absolute;
-      background: #3F5061;
+      background: #3f5061;
       height: (100% + 60%);
       width: 1px;
       bottom: -15px;
       left: 3px;
     }
-    &:nth-last-of-type(1):before{
+    &:nth-last-of-type(1):before {
       content: none;
     }
 
-    .bola{
+    .bola {
       height: 8px;
       aspect-ratio: 1;
       background: #667788;
@@ -397,17 +554,23 @@ aside {
       position: relative;
     }
 
-    main{
+    main {
       font-size: 13px;
       padding: 0;
     }
 
-    a{
+    a {
       text-decoration: none;
       color: #ffffffd2;
-      &:hover{
+      &:hover {
         color: #ffffff8c;
       }
     }
   }
+}
+
+
+.footer{
+  height: 400px;
+  background: black;
 }
