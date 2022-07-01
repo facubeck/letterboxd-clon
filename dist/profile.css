@@ -35,7 +35,7 @@
 }
 
 body {
-  background: #14181C;
+  background: #14181c;
 }
 
 p {
@@ -139,7 +139,7 @@ p {
   width: 85px;
   height: 23px;
   display: flex;
-  background: #00B020;
+  background: #00b020;
   color: white;
   font-family: graphik-semi-bold;
   font-size: 0.875rem;
@@ -168,7 +168,7 @@ button:hover {
   height: 450px;
   width: 100%;
   z-index: -1;
-  background: linear-gradient(#202830, #14181C);
+  background: linear-gradient(#202830, #14181c);
 }
 
 .container {
@@ -180,7 +180,7 @@ button:hover {
 .mensaje {
   margin: 2.5rem auto;
   text-align: center;
-  color: #AABBCC;
+  color: #aabbcc;
 }
 
 .mensaje * {
@@ -191,7 +191,7 @@ button:hover {
 .mensaje a {
   color: white;
   text-decoration: none;
-  border-bottom: 1px solid #AABBCC;
+  border-bottom: 1px solid #aabbcc;
 }
 
 .mensaje:hover a {
@@ -212,7 +212,7 @@ button:hover {
 
 .sobretodo a {
   text-decoration: none;
-  color: #AABBCC;
+  color: #aabbcc;
   margin-bottom: 3px;
 }
 
@@ -221,8 +221,8 @@ button:hover {
 }
 
 .sobretodo a:nth-child(2) {
-  color: #AABBCC99;
-  font-size: .7rem;
+  color: #aabbcc99;
+  font-size: 0.7rem;
 }
 
 .sobretodo a:nth-child(2):hover {
@@ -295,7 +295,7 @@ button:hover {
 
 .poster-container .poster-content .poster-footer p {
   text-decoration: none;
-  color: #AABBCC;
+  color: #aabbcc;
   display: inline-block;
   padding: 0 6px;
   font-family: graphik-semi-bold;
@@ -314,14 +314,14 @@ button:hover {
 
 .poster-container .estrellas i {
   font-size: 0.813rem;
-  color: #AABBCC99;
+  color: #aabbcc99;
   margin-left: 1.5px;
 }
 
 .poster-container .estrellas p {
   margin-left: auto;
   font-size: 12px;
-  color: #AABBCC99;
+  color: #aabbcc99;
   font-family: graphik-light;
   margin-right: 5px;
   margin-top: 2px;
@@ -400,18 +400,18 @@ button:hover {
 }
 
 .lastest-news .news-text-container p {
-  color: #AABBCC;
+  color: #aabbcc;
   margin-top: 10px;
   font-size: 1.1rem;
   font-family: linux-libertine;
   line-height: 22px;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
 }
 
 .lastest-news .news-text-container p a {
   color: #e1e6ec;
   font-family: graphik-bold;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-decoration: none;
 }
 
@@ -478,7 +478,7 @@ button:hover {
 
 .popular-reviews .columna .review-content .user-title-stars .usuario a {
   text-decoration: none;
-  color: #AABBCC;
+  color: #aabbcc;
   padding: 0 6px;
   font-family: graphik-semi-bold;
   font-size: 12px;
@@ -498,7 +498,7 @@ button:hover {
 }
 
 .popular-reviews .columna .review-content .user-title-stars span {
-  color: #AABBCC99;
+  color: #aabbcc99;
   font-size: 1rem;
   margin-left: 8px;
   cursor: pointer;
@@ -511,7 +511,7 @@ button:hover {
 }
 
 .popular-reviews .columna .review-content .user-title-stars .estrellas-review .bi-chat-left-fill {
-  color: #AABBCC99;
+  color: #aabbcc99;
   margin-left: 10px;
   cursor: pointer;
 }
@@ -543,7 +543,7 @@ button:hover {
 
 .popular-reviews .columna .like-review i {
   font-size: 13px;
-  color: #AABBCC99;
+  color: #aabbcc99;
   cursor: pointer;
 }
 
@@ -551,21 +551,22 @@ button:hover {
   cursor: pointer;
   margin-left: 7px;
   font-size: 0.813rem;
-  color: #AABBCC99;
+  color: #aabbcc99;
   font-family: graphik-semi-bold;
 }
 
 .popular-reviews .columna .like-review span {
   cursor: pointer;
   font-size: 0.875rem;
-  color: #AABBCC99;
+  color: #aabbcc99;
   font-family: graphik-light;
   margin-right: 5px;
   margin-top: 2px;
   margin-left: 10px;
 }
 
-.popular-reviews .columna .like-review p:hover, .popular-reviews .columna .like-review span:hover {
+.popular-reviews .columna .like-review p:hover,
+.popular-reviews .columna .like-review span:hover {
   color: #aabbcc;
 }
 
@@ -583,6 +584,7 @@ button:hover {
 }
 
 .lista ul {
+  cursor: pointer;
   height: 105px;
   width: 250px;
   list-style-type: none;
@@ -652,18 +654,25 @@ button:hover {
   border-radius: 50%;
 }
 
-.lista .titulo-usuario .usuario-lista a, .lista .titulo-usuario .usuario-lista p {
+.lista .titulo-usuario .usuario-lista a,
+.lista .titulo-usuario .usuario-lista p {
   text-decoration: none;
-  color: #AABBCC;
+  color: #aabbcc;
   padding: 0 6px;
   font-family: graphik-semi-bold;
   font-size: 12px;
+}
+
+.lista .titulo-usuario .usuario-lista a:hover,
+.lista .titulo-usuario .usuario-lista p:hover {
+  color: #d2dae2;
 }
 
 .lista .titulo-usuario .usuario-lista p {
   font-size: 13px;
   color: #aabbcc70;
   font-family: graphik-light;
+  cursor: pointer;
 }
 
 .lista .titulo-usuario .usuario-lista i {
@@ -708,7 +717,7 @@ button:hover {
   cursor: pointer;
   font-size: 0.875rem;
   font-family: graphik-semi-bold;
-  color: #AABBCC;
+  color: #aabbcc;
   margin-left: 8px;
 }
 
@@ -743,7 +752,8 @@ button:hover {
   padding-bottom: 20px;
 }
 
-.bloque .contenido a:hover, .bloque .contenido h5:hover {
+.bloque .contenido a:hover,
+.bloque .contenido h5:hover {
   color: #0096c7;
 }
 
@@ -802,7 +812,7 @@ button:hover {
 footer {
   width: 100%;
   height: 478px;
-  background-color: #2C3440;
+  background-color: #2c3440;
 }
 
 footer ul {
@@ -816,7 +826,7 @@ footer ul {
 
 footer ul li {
   display: inline-block;
-  color: #AABBCC;
+  color: #aabbcc;
   font-family: graphik-semi-bold;
   font-size: 0.938rem;
   cursor: pointer;
@@ -845,7 +855,7 @@ footer .social-logos i {
 }
 
 footer .social-logos i:hover {
-  color: #AABBCC;
+  color: #aabbcc;
 }
 
 footer p {
@@ -861,7 +871,7 @@ footer p span {
 }
 
 footer p span:hover {
-  color: #AABBCC;
+  color: #aabbcc;
 }
 
 footer .logo-none {
@@ -959,7 +969,7 @@ footer .logo-none {
   }
   .lastest-news .news-text-container {
     padding: 10px;
-    background: #14181C;
+    background: #14181c;
   }
   .pr-margin {
     margin-top: 20px;
@@ -1027,7 +1037,8 @@ footer .logo-none {
   .recent-stories .columna-2 {
     display: none;
   }
-  .bloque .contenido p, .bloque .contenido a {
+  .bloque .contenido p,
+  .bloque .contenido a {
     font-size: 1rem;
   }
   .recent {
@@ -1329,7 +1340,7 @@ main {
 }
 
 .recent-reviews-container .texto span {
-  color: #AABBCC99;
+  color: #aabbcc99;
   font-size: 1rem;
   margin-left: 8px;
   cursor: pointer;
@@ -1355,7 +1366,7 @@ main {
 }
 
 .recent-reviews-container .texto .review-info .bi-chat-left-fill {
-  color: #AABBCC99;
+  color: #aabbcc99;
   margin-left: 10px;
   cursor: pointer;
 }
@@ -1392,7 +1403,7 @@ main {
 
 .recent-reviews-container .texto .like-review i {
   font-size: 13px;
-  color: #AABBCC99;
+  color: #aabbcc99;
   cursor: pointer;
 }
 
@@ -1400,14 +1411,14 @@ main {
   cursor: pointer;
   margin-left: 7px;
   font-size: 0.813rem;
-  color: #AABBCC99;
+  color: #aabbcc99;
   font-family: graphik-semi-bold;
 }
 
 .recent-reviews-container .texto .like-review span {
   cursor: pointer;
   font-size: 0.875rem;
-  color: #AABBCC99;
+  color: #aabbcc99;
   font-family: graphik-light;
   margin-right: 5px;
   margin-top: 2px;
