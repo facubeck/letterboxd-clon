@@ -1122,6 +1122,10 @@ footer .logo-none {
   align-items: center;
 }
 
+.profile-container .left-side .mobile-profile {
+  display: none;
+}
+
 .profile-container .left-side img {
   border-radius: 50%;
   height: 100px;
@@ -1335,7 +1339,8 @@ main {
   cursor: pointer;
 }
 
-.recent-reviews-container .texto h5:hover, .recent-reviews-container .texto span:hover {
+.recent-reviews-container .texto h5:hover,
+.recent-reviews-container .texto span:hover {
   color: #0096c7;
 }
 
@@ -1390,7 +1395,7 @@ main {
 }
 
 .recent-reviews-container .texto .review-text br {
-  content: '';
+  content: "";
   display: block;
   margin: 15px 0;
 }
@@ -1707,5 +1712,52 @@ aside {
 .footer {
   height: 400px;
   background: black;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    display: block;
+  }
+  .profile-container > div {
+    height: 100%;
+    flex-basis: 0;
+  }
+  .profile-container .left-side .desktop-profile {
+    display: none;
+  }
+  .profile-container .left-side .mobile-profile {
+    display: grid;
+  }
+  .profile-container .left-side .mobile-profile .top-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-container .left-side .mobile-profile .top-part div > * {
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 10px;
+  }
+  .profile-container .left-side .mobile-profile h4,
+  .profile-container .left-side .mobile-profile .socials {
+    text-align: center;
+  }
+  .profile-container .left-side .mobile-profile h4 {
+    order: 1;
+    margin-top: 5px;
+  }
+  .profile-container .right-side {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .profile-container .right-side div {
+    height: 100%;
+    margin: 10px 0 10px;
+    flex: 0 0 30%;
+  }
+  .profile-container .right-side div:nth-of-type(4) {
+    border-left: none;
+  }
 }
 /*# sourceMappingURL=profile.css.map */

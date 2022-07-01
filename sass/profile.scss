@@ -7,6 +7,9 @@
   .left-side {
     display: flex;
     align-items: center;
+    .mobile-profile {
+      display: none;
+    }
     img {
       border-radius: 50%;
       height: 100px;
@@ -212,7 +215,8 @@ main {
       display: inline-block;
       cursor: pointer;
     }
-    h5:hover, span:hover {
+    h5:hover,
+    span:hover {
       color: $hover;
     }
 
@@ -262,8 +266,8 @@ main {
       margin: 20px 0;
       line-height: 24px;
 
-      br{
-        content: '';
+      br {
+        content: "";
         display: block;
         margin: 15px 0;
       }
@@ -305,21 +309,21 @@ main {
   }
 }
 
-.underline-review{
-    width: 100%;
-    height: 0.1px;
-    background: #aabbcc48;
-    margin: 15px 0;
+.underline-review {
+  width: 100%;
+  height: 0.1px;
+  background: #aabbcc48;
+  margin: 15px 0;
 }
 
-.following{
+.following {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   padding: 10px 0 50px;
   gap: 6px;
 
-  img{
+  img {
     height: 40px;
     aspect-ratio: 1;
     border-radius: 20px;
@@ -333,13 +337,6 @@ main {
     }
   }
 }
-
-
-
-
-
-
-
 
 // @@ ASIDE //
 aside {
@@ -419,7 +416,6 @@ aside {
     }
   }
 }
-
 
 .bottom-line {
   border-bottom: 0.1px solid #aabbcc27;
@@ -565,8 +561,60 @@ aside {
   }
 }
 
-
-.footer{
+.footer {
   height: 400px;
   background: black;
+}
+
+// meida querys
+@media (max-width: 768px) {
+  .profile-container {
+    display: block;
+    & > div {
+      height: 100%;
+      flex-basis: 0;
+    }
+
+    .left-side {
+      .desktop-profile {
+        display: none;
+      }
+      .mobile-profile {
+        display: grid;
+
+        .top-part {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          div > * {
+            display: block;
+            margin-left: 15px;
+            margin-bottom: 10px;
+          }
+        }
+        h4,
+        .socials {
+          text-align: center;
+        }
+        h4 {
+          order: 1;
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .right-side {
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      div {
+        height: 100%;
+        margin: 10px 0 10px;
+        flex: 0 0 30%;
+      }
+      div:nth-of-type(4) {
+        border-left: none;
+      }
+    }
+  }
 }
