@@ -1288,10 +1288,6 @@ footer .logo-none {
   grid-template-columns: 70% 30%;
 }
 
-.content > * {
-  height: 500px;
-}
-
 main {
   padding-right: 25px;
 }
@@ -1434,7 +1430,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 10px 0 30px;
+  padding: 10px 0 50px;
   gap: 6px;
 }
 

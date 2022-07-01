@@ -176,10 +176,6 @@
 .content {
   display: grid;
   grid-template-columns: 70% 30%;
-
-  & > * {
-    height: 500px;
-  }
 }
 
 main {
@@ -320,7 +316,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 10px 0 30px;
+  padding: 10px 0 50px;
   gap: 6px;
 
   img{
