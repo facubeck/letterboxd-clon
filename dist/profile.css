@@ -1442,6 +1442,10 @@ main {
   margin: 15px 0;
 }
 
+.following-title {
+  margin-top: 60px;
+}
+
 .following {
   display: flex;
   flex-wrap: wrap;
@@ -1453,7 +1457,7 @@ main {
 .following img {
   height: 40px;
   aspect-ratio: 1;
-  border-radius: 20px;
+  border-radius: 50%;
   cursor: pointer;
   object-fit: cover;
   object-position: top;
@@ -1467,6 +1471,10 @@ main {
 aside {
   padding-left: 35px;
   padding-top: 25px;
+}
+
+aside .image2 {
+  display: none;
 }
 
 .cursor-pointer {
@@ -1758,6 +1766,63 @@ aside {
   }
   .profile-container .right-side div:nth-of-type(4) {
     border-left: none;
+  }
+  nav {
+    display: none;
+  }
+  .content {
+    display: block;
+  }
+  main {
+    padding-right: 0;
+  }
+  .posters-list {
+    display: flex;
+  }
+  .posters-list .poster-container {
+    width: 30%;
+  }
+  .recent-reviews-container .texto span {
+    margin-left: 0;
+  }
+  .following-title {
+    margin-top: 30px;
+  }
+  .following img {
+    height: 49px;
+  }
+  aside {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  aside .image1 {
+    display: none;
+  }
+  aside .image2 {
+    display: block;
+    width: 100%;
+  }
+  .diary ul {
+    margin-left: 27px;
+  }
+  .recent-lists {
+    margin-top: 40px;
+  }
+  .listas-profile {
+    padding-bottom: 0;
+  }
+  .activity-ul {
+    margin-bottom: 50px;
+    margin-top: 20px;
+  }
+  .activity-ul li main {
+    margin-top: -4px;
+  }
+}
+
+@media (max-width: 950px) {
+  .content {
+    display: block;
   }
 }
 /*# sourceMappingURL=profile.css.map */
