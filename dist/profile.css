@@ -1455,7 +1455,7 @@ main {
 }
 
 .following img {
-  height: 40px;
+  width: 40px;
   aspect-ratio: 1;
   border-radius: 50%;
   cursor: pointer;
@@ -1754,6 +1754,9 @@ aside .image2 {
     order: 1;
     margin-top: 5px;
   }
+  .profile-container .left-side .mobile-profile .socials p {
+    font-size: 12px;
+  }
   .profile-container .right-side {
     justify-content: center;
     flex-wrap: wrap;
@@ -1782,14 +1785,20 @@ aside .image2 {
   .posters-list .poster-container {
     width: 30%;
   }
+  .recent-reviews-sobretodo {
+    margin-top: 35px;
+  }
   .recent-reviews-container .texto span {
     margin-left: 0;
   }
   .following-title {
     margin-top: 30px;
   }
+  .following {
+    justify-content: center;
+  }
   .following img {
-    height: 49px;
+    flex-basis: 12%;
   }
   aside {
     padding-left: 0;

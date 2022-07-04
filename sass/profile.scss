@@ -316,7 +316,7 @@ main {
   margin: 15px 0;
 }
 
-.following-title{
+.following-title {
   margin-top: 60px;
 }
 
@@ -328,7 +328,7 @@ main {
   gap: 6px;
 
   img {
-    height: 40px;
+    width: 40px;
     aspect-ratio: 1;
     border-radius: 50%;
     cursor: pointer;
@@ -347,7 +347,7 @@ aside {
   padding-left: 35px;
   padding-top: 25px;
 
-  .image2{
+  .image2 {
     display: none;
   }
 }
@@ -608,6 +608,10 @@ aside {
           order: 1;
           margin-top: 5px;
         }
+
+        .socials p {
+          font-size: 12px;
+        }
       }
     }
 
@@ -627,75 +631,82 @@ aside {
   }
 
   // nav
-  nav{
+  nav {
     display: none;
   }
 
   // content
-  .content{
+  .content {
     display: block;
   }
 
-  main{
+  main {
     padding-right: 0;
   }
 
-  .posters-list{
+  .posters-list {
     display: flex;
 
-    .poster-container{
+    .poster-container {
       width: 30%;
     }
+  }
+
+  .recent-reviews-sobretodo {
+    margin-top: 35px;
   }
 
   .recent-reviews-container .texto span {
     margin-left: 0;
   }
 
-  .following-title{
+  .following-title {
     margin-top: 30px;
   }
 
-  .following img{
-    height: 49px;
+  .following {
+    justify-content: center;
+    img {
+      flex-basis: 12%;
+    }
   }
 
-  aside{
+  aside {
     padding-left: 0;
     padding-top: 0;
-    .image1{
+    .image1 {
       display: none;
     }
-    .image2{
+    .image2 {
       display: block;
       width: 100%;
     }
   }
 
-  .diary ul{
+  .diary ul {
     margin-left: 27px;
   }
 
-  .recent-lists{
+  .recent-lists {
     margin-top: 40px;
   }
 
-  .listas-profile{
+  .listas-profile {
     padding-bottom: 0;
   }
 
-  .activity-ul{
+  .activity-ul {
     margin-bottom: 50px;
     margin-top: 20px;
   }
 
-  .activity-ul li main{
+  .activity-ul li main {
     margin-top: -4px;
   }
 }
 
-@media (max-width: 950px){
-  .content{
+@media (max-width: 950px) {
+  .content {
     display: block;
   }
 }
