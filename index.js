@@ -9,8 +9,12 @@ const closeButton = document.getElementById('close-button');
 // }
 
 const cerrarModal = () => {
-    overlay.classList.add('close');
-    modal.classList.add('close');
+    // overlay.style.display = 'none';
+    // modal.style.display = 'none';
+    overlay.classList.add('hidden');
+    modal.classList.add('hidden');
 }
+
+closeButton.addEventListener('click', cerrarModal)
 
 // closeButton.onclick - cerrarModal();
