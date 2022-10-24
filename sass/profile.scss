@@ -846,3 +846,8 @@ aside {
     display: block;
   }
 }
+
+// Para que no se pueda scrollear cuando el modal sea visible
+body{
+  overflow: hidden;
+}

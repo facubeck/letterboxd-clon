@@ -13,6 +13,7 @@ const cerrarModal = () => {
     // modal.style.display = 'none';
     overlay.classList.add('hidden');
     modal.classList.add('hidden');
+    document.body.style.overflow = 'visible'
 }
 
 closeButton.addEventListener('click', cerrarModal)

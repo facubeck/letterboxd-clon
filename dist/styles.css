@@ -1131,4 +1131,8 @@ footer .logo-none {
 }
 .padding-bottom {
   padding-bottom: 2500px;
+}
+
+body {
+  overflow: hidden;
 }/*# sourceMappingURL=styles.css.map */

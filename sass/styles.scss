@@ -1342,3 +1342,9 @@ footer {
 .padding-bottom {
   padding-bottom: 2500px;
 }
+
+
+// Para que no se pueda scrollear cuando el modal sea visible
+body{
+  overflow: hidden;
+}

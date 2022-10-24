@@ -1133,6 +1133,10 @@ footer .logo-none {
   padding-bottom: 2500px;
 }
 
+body {
+  overflow: hidden;
+}
+
 .profile-container {
   display: flex;
 }
@@ -1893,4 +1897,7 @@ aside .image2 {
   .content {
     display: block;
   }
+}
+body {
+  overflow: hidden;
 }/*# sourceMappingURL=profile.css.map */
