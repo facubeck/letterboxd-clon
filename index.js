@@ -16,6 +16,7 @@ const cerrarModal = () => {
     document.body.style.overflow = 'visible'
 }
 
-closeButton.addEventListener('click', cerrarModal)
+closeButton.addEventListener('click', cerrarModal);
+overlay.addEventListener('click', cerrarModal);
 
 // closeButton.onclick - cerrarModal();
