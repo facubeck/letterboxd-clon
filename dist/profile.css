@@ -794,7 +794,7 @@ footer .logo-none {
   width: 400px;
   background: #445566;
   position: fixed;
-  top: 32%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 5px;
@@ -1131,10 +1131,6 @@ footer .logo-none {
 }
 .padding-bottom {
   padding-bottom: 2500px;
-}
-
-body {
-  overflow: hidden;
 }
 
 .profile-container {
@@ -1689,7 +1685,7 @@ aside .image2 {
   width: 400px;
   background: #445566;
   position: fixed;
-  top: 32%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 5px;
@@ -1897,7 +1893,4 @@ aside .image2 {
   .content {
     display: block;
   }
-}
-body {
-  overflow: hidden;
 }/*# sourceMappingURL=profile.css.map */

@@ -597,7 +597,7 @@ aside {
   width: 400px;
   background: #445566;
   position: fixed;
-  top: 32%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 5px;
@@ -845,9 +845,4 @@ aside {
   .content {
     display: block;
   }
-}
-
-// Para que no se pueda scrollear cuando el modal sea visible
-body{
-  overflow: hidden;
 }
