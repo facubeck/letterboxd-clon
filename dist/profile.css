@@ -1368,7 +1368,7 @@ main {
   cursor: pointer;
 }
 .recent-reviews-container .texto .review-info span {
-  font-size: 0.813rem;
+  font-size: 12px;
   margin-left: 2px;
   cursor: pointer;
 }
