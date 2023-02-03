@@ -1133,9 +1133,10 @@ footer .logo-none {
   padding-bottom: 2500px;
 }
 
-body {
-  position: static;
-  overflow-y: auto;
+body.noscroll {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
 }
 
 .profile-container {
@@ -1898,4 +1899,9 @@ aside .image2 {
   .content {
     display: block;
   }
+}
+body.noscroll {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
 }/*# sourceMappingURL=profile.css.map */
