@@ -1342,3 +1342,12 @@ footer {
 .padding-bottom {
   padding-bottom: 2500px;
 }
+
+// Class para que no se pueda scrollear
+
+body.noscroll
+{
+    position: fixed; 
+    overflow-y: scroll;
+    width: 100%;
+}

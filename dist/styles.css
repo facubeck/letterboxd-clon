@@ -1131,4 +1131,10 @@ footer .logo-none {
 }
 .padding-bottom {
   padding-bottom: 2500px;
+}
+
+body.noscroll {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

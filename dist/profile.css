@@ -1133,6 +1133,11 @@ footer .logo-none {
   padding-bottom: 2500px;
 }
 
+body {
+  position: static;
+  overflow-y: auto;
+}
+
 .profile-container {
   display: flex;
 }
