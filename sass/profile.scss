@@ -229,12 +229,15 @@ main {
 
     .review-info {
       margin-top: 10px;
-      color: green;
       font-size: 11px;
+      color: #667788;
+
+      i{
+      color: green;
+      }
 
       p {
         display: inline-block;
-        margin-left: 5px;
         color: #667788;
         font-size: 13px;
         font-family: "graphik-light", sans-serif;
@@ -256,6 +259,13 @@ main {
       }
       span:hover {
         color: #fff;
+      }
+
+      .fecha{
+        display: inline-block;
+        font-size: 13px;
+        font-family: "graphik-light", sans-serif;
+        margin-top: 2px;
       }
     }
 
@@ -849,9 +859,9 @@ aside {
 
 // Class para que no se pueda scrollear
 
-body.noscroll
-{
-    position: fixed; 
-    overflow-y: scroll;
-    width: 100%;
-}
+// body.noscroll
+// {
+//     position: fixed; 
+//     overflow-y: scroll;
+//     width: 100%;
+// }
