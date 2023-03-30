@@ -48,6 +48,11 @@ $hover: #0096c7;
 body {
   background: $secundario;
 }
+body.no-scroll{
+  position: fixed;
+  width: 100%;
+  overflow-y: scroll;
+}
 p {
   cursor: default;
 }
@@ -906,12 +911,11 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  // display: none;
-  visibility: visible;
+  opacity: 1;
+  transition: 1s ease-in-out all;
 }
 .overlay.hidden{
-  display: none;
-  transition: ease-in-out .2s !important;
+  opacity: 0;
 }
 
 .modal{
@@ -1011,7 +1015,7 @@ footer {
 }
 .modal.hidden{
   visibility: hidden !important; 
-  transition: ease-in-out .4s !important;
+  transition: ease-in-out .8s !important;
   transform: translate(-50%, -50%) scale(0);
 }
 

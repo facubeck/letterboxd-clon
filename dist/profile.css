@@ -32,6 +32,12 @@ body {
   background: #14181c;
 }
 
+body.no-scroll {
+  position: fixed;
+  width: 100%;
+  overflow-y: scroll;
+}
+
 p {
   cursor: default;
 }
@@ -781,12 +787,12 @@ footer .logo-none {
   left: 0;
   right: 0;
   bottom: 0;
-  visibility: visible;
+  opacity: 1;
+  transition: 1s ease-in-out all;
 }
 
 .overlay.hidden {
-  display: none;
-  transition: ease-in-out 0.2s !important;
+  opacity: 0;
 }
 
 .modal {
@@ -876,7 +882,7 @@ footer .logo-none {
 
 .modal.hidden {
   visibility: hidden !important;
-  transition: ease-in-out 0.4s !important;
+  transition: ease-in-out 0.8s !important;
   transform: translate(-50%, -50%) scale(0);
 }
 
@@ -1036,7 +1042,7 @@ footer .logo-none {
     display: none;
   }
   .bloque .contenido p,
-.bloque .contenido a {
+  .bloque .contenido a {
     font-size: 1rem;
   }
   .recent {
@@ -1686,12 +1692,12 @@ aside .image2 {
   left: 0;
   right: 0;
   bottom: 0;
-  visibility: visible;
+  opacity: 1;
+  transition: 1s ease-in-out all;
 }
 
 .overlay.hidden {
-  display: none;
-  transition: ease-in-out 0.2s !important;
+  opacity: 0;
 }
 
 .modal {
@@ -1773,7 +1779,7 @@ aside .image2 {
 
 .modal.hidden {
   visibility: hidden !important;
-  transition: ease-in-out 0.4s !important;
+  transition: ease-in-out 0.8s !important;
   transform: translate(-50%, -50%) scale(0);
 }
 
@@ -1802,7 +1808,7 @@ aside .image2 {
     margin-bottom: 10px;
   }
   .profile-container .left-side .mobile-profile h4,
-.profile-container .left-side .mobile-profile .socials {
+  .profile-container .left-side .mobile-profile .socials {
     text-align: center;
   }
   .profile-container .left-side .mobile-profile h4 {

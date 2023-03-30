@@ -594,12 +594,11 @@ aside {
   left: 0;
   right: 0;
   bottom: 0;
-  // display: none;
-  visibility: visible;
+  opacity: 1;
+  transition: 1s ease-in-out all;
 }
 .overlay.hidden{
-  display: none;
-  transition: ease-in-out .2s !important;
+  opacity: 0;
 }
 
 .modal{
@@ -690,7 +689,7 @@ aside {
 }
 .modal.hidden{
   visibility: hidden !important; 
-  transition: ease-in-out .4s !important;
+  transition: ease-in-out .8s !important;
   transform: translate(-50%, -50%) scale(0);
 }
 
@@ -856,12 +855,3 @@ aside {
     display: block;
   }
 }
-
-// Class para que no se pueda scrollear
-
-// body.noscroll
-// {
-//     position: fixed; 
-//     overflow-y: scroll;
-//     width: 100%;
-// }

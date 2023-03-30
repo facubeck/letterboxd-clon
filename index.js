@@ -4,21 +4,22 @@ const overlay = document.getElementById('overlay');
 const closeButton = document.getElementById('close-button');
 const body = document.getElementById('body');
 
-// const mostrarModal = () => {
-//     overlay.classList.add('active');
-//     modal.classList.add('active');
-// }
 
 const cerrarModal = () => {
-    // overlay.style.display = 'none';
-    // modal.style.display = 'none';
     overlay.classList.add('hidden');
     modal.classList.add('hidden');
     document.body.style.overflow = 'visible';
-    body.classList.remove('noscroll');
+    body.classList.remove('no-scroll');
+
+    setTimeout(() => {
+        if (overlay.classList.contains('hidden')) {
+            let style = getComputedStyle(overlay);
+            let opacity = style.opacity;
+            overlay.style.display = 'none'
+            console.log(opacity);
+        }
+    }, 700)
 }
 
 closeButton.addEventListener('click', cerrarModal);
 overlay.addEventListener('click', cerrarModal);
-
-// closeButton.onclick - cerrarModal();
